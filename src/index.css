@@ -34,6 +34,11 @@ main {
   transition: opacity 0.5s;
 }
 
+.portrait-content img {
+  height:100%;
+  width:100%;
+}
+
 .portrait-content:hover{
   opacity:0;
 }

@@ -1,4 +1,5 @@
 import React, {Component} from "react";
+import placeholder from "./placeholder.png"
 
 class Grid extends Component{
     render(){
@@ -7,7 +8,27 @@ class Grid extends Component{
             <div className="grid">
                 <div className="portrait">
                     <div className="portrait-content">
-                        <img src="C:/users/adhun/npclib/public/img/placeholder.png"></img>
+                        <img src={placeholder}></img>
+                    </div>
+                </div>
+                <div className="portrait">
+                    <div className="portrait-content">
+                        <img src={placeholder}></img>
+                    </div>
+                </div>
+                <div className="portrait">
+                    <div className="portrait-content">
+                        <img src={placeholder}></img>
+                    </div>
+                </div>
+                <div className="portrait">
+                    <div className="portrait-content">
+                        <img src={placeholder}></img>
+                    </div>
+                </div>
+                <div className="portrait">
+                    <div className="portrait-content">
+                        <img src={placeholder}></img>
                     </div>
                 </div>
             </div>
