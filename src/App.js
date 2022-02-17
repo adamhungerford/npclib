@@ -1,15 +1,20 @@
+import { useState } from 'react';
 import Grid from './Grid';
-import logo from './logo.svg';
-//import './App.css';
+import Header from './Header';
+import Info from './Info';
 
 function App() {
+
+  const [details, setDetails] = useState("");
+
   return (
     <div className="App">
-      <header></header>
+      <Header />
       <main>
-        <Grid />
+        <Grid details={details} setDetails={setDetails} />
       </main>
       <footer></footer>
+      <Info details={details} setDetails={setDetails}/>
     </div>
   );
 }

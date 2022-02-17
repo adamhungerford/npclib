@@ -1,37 +1,57 @@
 import React, {Component} from "react";
-import placeholder from "./placeholder.png"
+import Portrait from "./Portrait";
+import lib from "./lib.js";
 
 class Grid extends Component{
+
+    constructor(props){
+        super(props);
+        this.state = {
+            portraits: null,
+            selected: null,
+            details: this.props.details,
+            setDetails: this.props.setDetails,
+            library: lib().Library
+        }
+    }
+
+    makePortraits(array){
+        var portraitsArray = []
+        var readFrom = array
+        for(var i=0; i<readFrom.length; i++){
+                portraitsArray.push(<Portrait 
+                    details={this.props.details}
+                    setDetails={this.props.setDetails} 
+                    properties={readFrom[i]}/>)
+        }
+        this.setState({portraits: portraitsArray})
+        return portraitsArray;
+    }
+
+    componentDidMount(){
+        this.makePortraits(this.state.library[0].characters);
+    }
+
     render(){
         return(
         <>
-            <div className="grid">
-                <div className="portrait">
-                    <div className="portrait-content">
-                        <img src={placeholder}></img>
+            {this.state.library.map((val, key) => {
+            return(<>
+                    <h1>{val.header}</h1>
+                    <div className="grid">
+                        {val.characters.map((v2, k2) => {
+                            return(
+                                <Portrait 
+                                details={this.props.details}
+                                setDetails={this.props.setDetails} 
+                                properties={v2} />
+                            )
+                        })}
+                        
                     </div>
-                </div>
-                <div className="portrait">
-                    <div className="portrait-content">
-                        <img src={placeholder}></img>
-                    </div>
-                </div>
-                <div className="portrait">
-                    <div className="portrait-content">
-                        <img src={placeholder}></img>
-                    </div>
-                </div>
-                <div className="portrait">
-                    <div className="portrait-content">
-                        <img src={placeholder}></img>
-                    </div>
-                </div>
-                <div className="portrait">
-                    <div className="portrait-content">
-                        <img src={placeholder}></img>
-                    </div>
-                </div>
-            </div>
+                </>
+            )
+            })}
         </>
         );
     }
