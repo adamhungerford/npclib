@@ -11,12 +11,14 @@ class Info extends Component{
     render(){
         return(
             <aside id="info">
-                <h1>{this.props.details.name}</h1>
-                <h3>{this.props.details.pronouns}</h3>
-                <p><i>{this.props.details.description}</i></p>
-                <div className="fade"></div>
-                <img className="infoBackground" src={this.props.details.url || 
-                dargon} width="400px" height="400px" />
+                <div className="asideText">
+                    <h1>{this.props.details.name}</h1>
+                    <h3>{this.props.details.pronouns}</h3>
+                    <p><i>{this.props.details.description}</i></p>
+                    <div className="fade"></div>
+                    <img className="infoBackground" alt="Wide character portrait" src={this.props.details.url || 
+                    dargon} width="250px" height="250px" />
+                </div>
             </aside>
         )
     }

@@ -5,6 +5,9 @@ body {
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  background-image: url(./togthumb.png);
+  background-repeat: no-repeat;
+  background-size:cover;
 }
 
 h1{
@@ -27,9 +30,21 @@ header, main {
 
 aside {
   position: fixed;
-  top:5px;
-  left:5px;
-  width:400px;
+  top:0px;
+  left:0px;
+  width: 400px;
+  height:100%;
+  background-image: linear-gradient(to right, rgba(0,0,0,.8), rgba(0,0,0,.8) 80%, rgba(0, 0, 0, 0) 100%);
+  color:white;
+  padding: 15px;
+}
+
+.asideText {
+  width:80%;
+}
+
+aside img {
+  border: 6px ridge rgb(230, 207, 0);
 }
 
 .grid{
