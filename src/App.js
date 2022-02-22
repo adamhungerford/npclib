@@ -9,12 +9,14 @@ function App() {
 
   return (
     <div className="App">
-      <Header />
-      <main>
-        <Grid details={details} setDetails={setDetails} />
-      </main>
-      <footer></footer>
-      <Info details={details} setDetails={setDetails}/>
+        <Header />
+        <Info details={details}/>
+        <main>
+          <Grid details={details} setDetails={setDetails} />
+        </main>
+        <footer>
+          <a href="http://edsite.black"><button>Return to EDSITE</button></a>
+        </footer>
     </div>
   );
 }

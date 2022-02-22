@@ -1,86 +1,61 @@
-body {
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  background-image: url(./togthumb.png);
-  background-repeat: no-repeat;
-  background-size:cover;
+.App{
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif
 }
 
-h1{
-  font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
-}
-
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
-}
-
-header, .grid {
-  margin-left:auto;
-  margin-right:auto;
-}
-
-header, main {
-  text-align: center;
-}
-
-aside {
-  position: fixed;
-  top:0px;
-  left:0px;
-  width: 400px;
-  height:100%;
-  background-image: linear-gradient(to right, rgba(0,0,0,.8), rgba(0,0,0,.8) 80%, rgba(0, 0, 0, 0) 100%);
-  color:white;
-  padding: 15px;
-}
-
-.asideText {
-  width:80%;
-}
-
-aside img {
-  border: 6px ridge rgb(230, 207, 0);
+header {
+    text-align: center;
 }
 
 .grid{
-  display:grid;
-  gap: 10px;
-  grid-template-columns: repeat(4, 100px);
-  grid-auto-rows:minmax(100px);
-  width:min-content;
-}
+    display:grid;
+    gap: 10px;
+    grid-template-columns: repeat(4, 70px);
+    grid-auto-rows:minmax(70px);
+    width:min-content;
+    margin-left:auto;
+    margin-right:auto;
+  }
 
-.portrait {
-  border:3px ridge rgb(230, 207, 0);
-  box-shadow: 0px 5px 10px;
-  overflow: hidden;
-  position:relative;
-  padding:0;
-  height:100px;
+  .portrait {
+    border:3px ridge rgb(230, 207, 0);
+    box-shadow: 0px 5px 10px;
+    overflow: hidden;
+    position:relative;
+    padding:0;
+    height:70px; 
+  }
+
+  .tint{
+    position:absolute;
+    width:70px;
+    height:70px;
+    opacity:0.3;
+    transition: opacity 0.5s;
+    background-color: rgb(0, 0, 0);
+  }
   
-}
+  .portrait-content img {
+    height:70px;
+    width:70px;
+    opacity:1;
+  }
+  
+  .tint:hover{
+    opacity:0;
+  }
 
-.tint{
-  position:absolute;
-  width:100px;
-  height:100px;
-  opacity:0.3;
-  transition: opacity 0.5s;
-  background-color: rgb(0, 0, 0);
-}
+  main {
+      max-height:70vw;
+      overflow:scroll;
+      text-align:center;
+  }
 
-.portrait-content img {
-  height:100px;
-  width:100px;
-  opacity:1;
-}
+  .aside {
+      height:45%;
+  }
 
-.tint:hover{
-  opacity:0;
-}
-
+  .infoPortrait{
+    border:10px ridge rgb(230, 207, 0);
+    display:block;
+    margin: 0 auto 0 auto;
+  }
