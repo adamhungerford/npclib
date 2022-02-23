@@ -1,5 +1,4 @@
 import { Component } from "react";
-import placeholder from "./placeholder.png"
 
 class Portrait extends Component{
     constructor(props){
@@ -23,7 +22,7 @@ class Portrait extends Component{
             <div className="portrait">
                 <div className="tint" onMouseOver={this.changeName} />
                 <div className="portrait-content">
-                    <img src={this.state.photo} alt="Placeholder" ></img>
+                    <img src={this.state.photo} alt={this.state.name}></img>
                 </div>
             </div>
         );

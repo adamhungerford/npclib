@@ -1,19 +1,33 @@
-.App{
-    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif
+.App {
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+body {
+  margin: 0;
+  background-color: #F2F3AE;
+}
+
+h1, h2, h3 {
+  font-family: 'Castellar', sans-serif;
 }
 
 header {
-    text-align: center;
+  text-align: center;
+  background-color: #69140E;
+  color:whitesmoke;
+  border-top:5px double white;
+  border-bottom: 5px double white;
 }
 
 .grid{
     display:grid;
     gap: 10px;
-    grid-template-columns: repeat(4, 70px);
-    grid-auto-rows:minmax(70px);
+    grid-template-columns: repeat(3, 100px);
+    grid-auto-rows:minmax(100px);
     width:min-content;
     margin-left:auto;
     margin-right:auto;
+    
   }
 
   .portrait {
@@ -22,21 +36,21 @@ header {
     overflow: hidden;
     position:relative;
     padding:0;
-    height:70px; 
+    height:100px; 
   }
 
   .tint{
     position:absolute;
-    width:70px;
-    height:70px;
+    width:100px;
+    height:100px;
     opacity:0.3;
     transition: opacity 0.5s;
     background-color: rgb(0, 0, 0);
   }
   
   .portrait-content img {
-    height:70px;
-    width:70px;
+    height:100px;
+    width:100px;
     opacity:1;
   }
   
@@ -50,12 +64,23 @@ header {
       text-align:center;
   }
 
-  .aside {
+  aside {
       height:45%;
+      padding: 10px;
+      background-color:#A44200;
+  }
+
+  aside * {
+    margin: 0;
   }
 
   .infoPortrait{
     border:10px ridge rgb(230, 207, 0);
     display:block;
-    margin: 0 auto 0 auto;
+    margin: 10px auto 0 auto;
+  }
+
+  footer {
+    padding: 10px;
+    text-align: center;
   }
