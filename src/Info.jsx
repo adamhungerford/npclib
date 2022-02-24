@@ -8,7 +8,8 @@ class Info extends Component{
     }
 
     discoverSrc(url){
-        if(url === "" || url === null){
+        console.log(url);
+        if(url === "" || url === null || url === undefined){
             return(<></>);
         } else {
             return(<img src={this.props.details.url} alt={this.props.details.name} 
