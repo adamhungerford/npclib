@@ -15,7 +15,11 @@ function App() {
           <Grid details={details} setDetails={setDetails} />
         </main>
         <footer>
-          <a href="http://edsite.black"><button>Return to EDSITE</button></a>
+          <a href="http://edsite.black">
+            <button>
+              <h1>Return to EDSITE</h1>
+            </button>
+          </a>
         </footer>
     </div>
   );

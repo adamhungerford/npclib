@@ -1,12 +1,12 @@
 function lib(){
     const Library = {"Library":[
         {"header": "Wideseal", "characters":[
-            //Arle and Lyster
+            // //Arle and Lyster
             // {"name": "Arle and Lyster Gyle", "pronouns": "he/him and she/her",
             // "description": "The twin kahmogi owners of the Gyle Well. Feuding since fairly recently, each one suspects the other of sabotage.",
             // "url": "https://cdn.discordapp.com/attachments/837882618799849563/943860166758125578/20220212_023854.jpg"},
     
-            //Aarthi
+            // //Aarthi
             // {"name":"Aarthi Khatri", "pronouns": "she/her", "description": "A smith's apprentice. Always seems to have some injury or another.",
             // "url": "https://cdn.discordapp.com/attachments/837882618799849563/943860167013969931/20220212_023940.jpg"},
 
@@ -44,7 +44,7 @@ function lib(){
             {"name": "Methuselah", "pronouns": "he/him", "description": "The silent leader of the Mariners. In lieu of speaking, Silt interprets.",
             "url": "https://cdn.discordapp.com/attachments/916569335336677396/916747294202814524/Nadir1.jpg"},
 
-            //Puddle
+            // //Puddle
             // {"name": "Puddle", "pronouns": "he/him", "description": "The newest Mariner, and a big fan of the Mariner.",
             // "url": ""},
             ]}

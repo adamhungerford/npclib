@@ -68,8 +68,7 @@ header {
   aside {
       height:45%;
       padding: 10px;
-      background-color:#A44200;
-      color:white;
+      color:black;
   }
 
   aside * {
@@ -85,4 +84,13 @@ header {
   footer {
     padding: 10px;
     text-align: center;
+  }
+
+  button{
+    font-family: inherit;
+    border:0;
+    height:auto;
+    width:100%;
+    background-color: #69140E;
+    color:white;
   }

@@ -14,8 +14,7 @@ class Portrait extends Component{
 
     changeName(){
         this.props.setDetails(this.props.properties);
-    }
-    
+    }    
 
     render(){
         return(
