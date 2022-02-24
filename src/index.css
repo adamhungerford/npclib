@@ -8,7 +8,8 @@ body {
 }
 
 h1, h2, h3 {
-  font-family: 'Castellar', sans-serif;
+  font-family: 'Castellar', 'Times New Roman', serif;
+  text-transform: uppercase;
 }
 
 header {
@@ -31,7 +32,7 @@ header {
   }
 
   .portrait {
-    border:3px ridge rgb(230, 207, 0);
+    border:3px ridge #A44200;
     box-shadow: 0px 5px 10px;
     overflow: hidden;
     position:relative;
@@ -68,6 +69,7 @@ header {
       height:45%;
       padding: 10px;
       background-color:#A44200;
+      color:white;
   }
 
   aside * {
@@ -75,7 +77,7 @@ header {
   }
 
   .infoPortrait{
-    border:10px ridge rgb(230, 207, 0);
+    border:10px ridge rgb(71, 46, 0);
     display:block;
     margin: 10px auto 0 auto;
   }
