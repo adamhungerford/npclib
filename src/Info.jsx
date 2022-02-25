@@ -12,21 +12,23 @@ class Info extends Component{
         if(url === "" || url === null || url === undefined){
             return(<></>);
         } else {
-            return(<img src={this.props.details.url} alt={this.props.details.name} 
-                className="infoPortrait" width="250px" height="250px"></img>);
+            return(<aside id="info">
+            <div className="asideText">
+                <h1>{this.props.details.name}</h1>
+                <h3>{this.props.details.pronouns}</h3>
+                <p><i>{this.props.details.description}</i></p>
+                <img src={this.props.details.url} alt={this.props.details.name} 
+                    className="infoPortrait" width="250px" height="250px"></img>
+            </div>
+        </aside>);
         }
     }
 
     render(){
         return(
-            <aside id="info">
-                <div className="asideText">
-                    <h1>{this.props.details.name}</h1>
-                    <h3>{this.props.details.pronouns}</h3>
-                    <p><i>{this.props.details.description}</i></p>
-                    {this.discoverSrc(this.props.details.url)}
-                </div>
-            </aside>
+            <>
+                {this.discoverSrc(this.props.details.url)}
+            </>
         )
     }
 }
