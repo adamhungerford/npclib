@@ -1,4 +1,4 @@
-@media screen and (min-width:800px) {
+@media screen and (min-width:950px) {
     body {
         width: 50%;
         margin-left: auto;
@@ -17,7 +17,6 @@
         background-color: #F2F3AE;
         border-left: 5px double white;
         border-right: 5px double white;
-        padding:10px;
     }
 
     header {
