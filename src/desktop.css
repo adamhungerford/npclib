@@ -52,7 +52,23 @@
     }
 
     .grid {
-        grid-template-columns: repeat(4, 100px);
+        grid-template-columns: repeat(4, 125px);
+        grid-auto-rows:minmax(125px);
+    }
+
+    .portrait {
+        height: 125px;
+    }
+
+    .tint{
+        position:absolute;
+        width:125px;
+        height:125px;
+    }
+
+    .portrait-content img {
+        height:125px;
+        width:125px;
     }
 
 }
