@@ -13,7 +13,7 @@ function App() {
         <Header />
         <Info details={details}/>
         <main>
-          <Grid details={details} setDetails={setDetails} />
+          {/* <Grid details={details} setDetails={setDetails} /> */}
           <Table />
         </main>
         <footer>
