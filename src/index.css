@@ -16,7 +16,7 @@ h4 {
   text-transform: uppercase;
 }
 
-header, footer {
+header {
   text-align: center;
   background-color: #69140E;
   color:whitesmoke;
@@ -89,6 +89,9 @@ aside * {
 footer {
   padding: 10px;
   text-align: center;
+  color: lightslategray;
+  border-top: 1px solid slategray;
+  margin-top: 10px;
 }
 
 button{
@@ -98,4 +101,9 @@ button{
   width:100%;
   background-color: #69140E;
   color:white;
+}
+
+footer a {
+  text-decoration: underline;
+  color:lightslategrey;
 }

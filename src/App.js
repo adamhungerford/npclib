@@ -15,11 +15,9 @@ function App() {
           <Grid details={details} setDetails={setDetails} />
         </main>
         <footer>
-          <a href="http://edsite.black">
-            <button>
-              <h1>Return to EDSITE</h1>
-            </button>
-          </a>
+        <a href="https://www.flaticon.com/free-icons/dragon" 
+        title="dragon icons">Dragon favicon created by Freepik - Flaticon</a> | <a 
+        href="http://edsite.black">Return to EDSITE</a>
         </footer>
     </div>
   );
