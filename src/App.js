@@ -2,6 +2,7 @@ import { useState } from 'react';
 import Grid from './Grid';
 import Header from './Header';
 import Info from './Info';
+import Table from './Table';
 
 function App() {
 
@@ -13,6 +14,7 @@ function App() {
         <Info details={details}/>
         <main>
           <Grid details={details} setDetails={setDetails} />
+          <Table />
         </main>
         <footer>
         <a href="https://www.flaticon.com/free-icons/dragon" 

@@ -24,6 +24,11 @@ header {
   
 }
 
+.gridContainer {
+  max-height:70vw;
+  overflow-y:scroll;
+}
+
 .grid{
   display:grid;
   gap: 10px;
@@ -31,8 +36,7 @@ header {
   grid-auto-rows:minmax(100px);
   width:min-content;
   margin-left:auto;
-  margin-right:auto;
-  
+  margin-right:auto;  
 }
 
 .portrait {
@@ -64,8 +68,6 @@ header {
 }
 
 main {
-    max-height:70vw;
-    overflow-y:scroll;
     text-align:center;
     padding:10px;
 }

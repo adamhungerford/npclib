@@ -50,8 +50,12 @@
     }
 
     main {
-        overflow:visible;
+        
         margin:0;
+    }
+
+    .gridContainer {
+        overflow:visible;
     }
 
     .grid {

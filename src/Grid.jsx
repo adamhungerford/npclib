@@ -34,7 +34,7 @@ class Grid extends Component{
 
     render(){
         return(
-        <>
+        <div className="gridContainer">
             {this.state.library.map((val, key) => {
             return(<>
                     <h1>{val.header}</h1>
@@ -52,7 +52,7 @@ class Grid extends Component{
                 </>
             )
             })}
-        </>
+        </div>
         );
     }
 }
