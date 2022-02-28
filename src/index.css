@@ -24,6 +24,12 @@ header {
   
 }
 
+.gridContainer {
+  max-height:70vw;
+  overflow-y:scroll;
+  padding-bottom:15px;
+}
+
 .grid{
   display:grid;
   gap: 10px;
@@ -64,8 +70,6 @@ header {
 }
 
 main {
-    max-height:70vw;
-    overflow-y:scroll;
     text-align:center;
     padding:10px;
 }
