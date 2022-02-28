@@ -27,6 +27,7 @@ header {
 .gridContainer {
   max-height:70vw;
   overflow-y:scroll;
+  padding-bottom:15px;
 }
 
 .grid{
