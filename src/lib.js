@@ -2,7 +2,7 @@ function lib(){
     const Library = {"Library":[
         {"header": "Wideseal", "characters":[
             // //Arle and Lyster
-            {"name": "Arle and Lyster Gyle", "pronouns": "he/hem and she/her",
+            {"name": "Arle and Lyster Gyle", "pronouns": "he/him and she/her",
             "description": "The twin kahmogi owners of the Gyle Well. Feuding since fairly recently, each one suspects the other of sabotage.",
             "url": "https://cdn.discordapp.com/attachments/837882618799849563/943860166758125578/20220212_023854.jpg"},
     
