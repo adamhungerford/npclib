@@ -14,6 +14,10 @@ function lib(){
             {"name": "Enmides Brook", "pronouns": "he/him", "description": "Dragonborn captain of the Raidyll Guard. Recently deputized our heroes.",
             "url": "https://cdn.discordapp.com/attachments/916569335336677396/916736124481831022/Enmides.jpg"},
 
+            // //Fortinbras
+            // {"name": "Fortinbras", "pronouns": "he/him", "description": "Earth genasi and proprietor of Fort's Porp-Up Shorp.",
+            // "url": ""},
+
             //Guido 
             {"name": "Guido Pilter", "pronouns": "he/him", "description": "The annoying ratfolk foreman.",
             "url": "https://cdn.discordapp.com/attachments/916569335336677396/916729655158009937/Guido.jpg"},
@@ -21,6 +25,10 @@ function lib(){
             //Roke
             {"name": "Roke Brassfist", "pronouns": "she/her", "description": "Dwarven sheriff of the Wideseal settlement, so named for her brass hand which replaced the one she lost in the Gradian catastrophe.",
             "url": "https://cdn.discordapp.com/attachments/916569335336677396/929412291265458206/Roke.jpg"},
+
+            // //Skipo
+            // {"name": "Skipo", "pronouns": "he/him", "description": "Excitable young aliam bard. Idolizes anyone who claims or even appears to be an adventurer.",
+            // "url": ""}
 
             //The Gourd
             {"name": "The Gradian Gourd", "pronouns": "N/A?", "description": "An automaton, or perhaps suit of armor, created within the Wideseal Enigma for an unknown purpose.",
