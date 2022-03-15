@@ -21,15 +21,16 @@
 @media screen and (min-width:950px) {
     html {
         background-image: url(superstition_mountain\,_apache_trail\,_arizona_\(no.1\)_1986.60.9.jpg);
+        background-position: 50% 0%;
+        background-size: cover;
+        background-attachment: fixed;
     }
 
     body {
         width: 50%;
         margin-left: auto;
         margin-right: auto;
-        background-attachment: fixed;
         background-color:whitesmoke;
-        background-size: cover;
         position:relative;
     }
 
