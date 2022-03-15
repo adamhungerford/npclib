@@ -15,7 +15,7 @@ function lib(){
             "url": "https://cdn.discordapp.com/attachments/916569335336677396/916736124481831022/Enmides.jpg"},
 
             // //Fortinbras
-            // {"name": "Fortinbras", "pronouns": "he/him", "description": "Earth genasi and proprietor of Fort's Porp-Up Shorp.",
+            // {"name": "Fortinbras", "pronouns": "she/her", "description": "Earth genasi and proprietor of Fort's Porp-Up Shorp.",
             // "url": ""},
 
             //Guido 
