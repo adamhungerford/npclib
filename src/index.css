@@ -18,8 +18,7 @@ h4 {
 
 header {
   text-align: center;
-  /* background-color: #69140E; */
-  background-image: url(3859499.jpg);
+  background: url(3859499.jpg), #69140E;
   background-size:cover;
   color:whitesmoke;
   border:5px double white;

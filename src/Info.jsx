@@ -7,17 +7,17 @@ class Info extends Component{
         this.state = {}
     }
 
-    discoverSrc(url){
-        console.log(url);
-        if(url === "" || url === null || url === undefined){
+    discoverSrc(details){
+        console.log(details);
+        if(details === "" || details === null || details === undefined ){
             return(<></>);
         } else {
             return(<aside id="info">
             <div className="asideText">
-                <h1>{this.props.details.name}</h1>
-                <h3>{this.props.details.pronouns}</h3>
-                <p><i>{this.props.details.description}</i></p>
-                <img src={url} alt={this.props.details.name} 
+                <h1>{details.name}</h1>
+                <h3>{details.pronouns}</h3>
+                <p><i>{details.description}</i></p>
+                <img src={details.url} alt={details.name} 
                     className="infoPortrait" width="250px" height="250px"></img>
             </div>
         </aside>);
@@ -27,7 +27,7 @@ class Info extends Component{
     render(){
         return(
             <>
-                {this.discoverSrc(this.props.details.url)}
+                {this.discoverSrc(this.props.details)}
             </>
         )
     }

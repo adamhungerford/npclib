@@ -28,7 +28,7 @@ function lib(){
 
             // //Skipo
             // {"name": "Skipo", "pronouns": "he/him", "description": "Excitable young aliam bard. Idolizes anyone who claims or even appears to be an adventurer.",
-            // "url": ""}
+            // "url": ""},
 
             //The Gourd
             {"name": "The Gradian Gourd", "pronouns": "N/A?", "description": "An automaton, or perhaps suit of armor, created within the Wideseal Enigma for an unknown purpose.",

@@ -1,9 +1,30 @@
+@media screen and (max-width:1105px) {
+    .grid{
+        grid-template-columns: repeat(3, 125px);
+    }
+}
+
+@media screen and (min-width:1105px){
+    .grid {
+        grid-template-columns: repeat(4, 125px);
+        grid-auto-rows: minmax(125px);
+    }
+}
+
+@media screen and (max-width:950px) {
+    .grid {
+        grid-template-columns: repeat(3, 100px);
+        grid-auto-rows: minmax(100px);
+    }
+}
+
 @media screen and (min-width:950px) {
     body {
         width: 50%;
         margin-left: auto;
         margin-right: auto;
         background-image: url(superstition_mountain\,_apache_trail\,_arizona_\(no.1\)_1986.60.9.jpg);
+        background-attachment: fixed;
         background-color:whitesmoke;
         background-size: cover;
         position:relative;
@@ -19,6 +40,8 @@
         border-left: 5px double white;
         border-right: 5px double white;
         border-bottom: 5px double white;
+        margin:0;
+        max-height: 100%;
     }
 
     main, header, aside{
@@ -50,7 +73,7 @@
         height:max-content;
         color:white;
         border:5px double white;
-        background-image: url(3859499.jpg);
+        background: url(3859499.jpg), #69140E;
         background-size:cover;
     }
 
@@ -60,17 +83,9 @@
         height:100%;
     }
 
-    main {
-        margin:0;
-    }
-
     .gridContainer {
+        max-height:100%;
         overflow:visible;
-    }
-
-    .grid {
-        grid-template-columns: repeat(4, 125px);
-        grid-auto-rows:minmax(125px);
     }
 
     .portrait {
