@@ -3,7 +3,7 @@
         width: 50%;
         margin-left: auto;
         margin-right: auto;
-        /* background-image: url('./togthumb.png'); */
+        background-image: url(superstition_mountain\,_apache_trail\,_arizona_\(no.1\)_1986.60.9.jpg);
         background-color:whitesmoke;
         background-size: cover;
         position:relative;
@@ -21,6 +21,10 @@
         border-bottom: 5px double white;
     }
 
+    main, header, aside{
+        box-shadow: 0px 5px 8px black;
+    }
+
     header {
         margin-top:10px;
     }
@@ -28,6 +32,12 @@
     footer {
         margin-bottom: 10px;
         border:none;
+        background-color: rgba(0,0,0,0.5);
+        color:white;
+    }
+
+    footer a {
+        color:white;
     }
     
     #info {
@@ -40,7 +50,8 @@
         height:max-content;
         color:white;
         border:5px double white;
-        background-color: #69140E;
+        background-image: url(3859499.jpg);
+        background-size:cover;
     }
 
     .infoPortrait {

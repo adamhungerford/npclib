@@ -18,7 +18,9 @@ h4 {
 
 header {
   text-align: center;
-  background-color: #69140E;
+  /* background-color: #69140E; */
+  background-image: url(3859499.jpg);
+  background-size:cover;
   color:whitesmoke;
   border:5px double white;
   
@@ -93,7 +95,6 @@ aside * {
 footer {
   padding: 10px;
   text-align: center;
-  color: lightslategray;
   border-top: 1px solid slategray;
   margin-top: 10px;
 }
@@ -104,10 +105,9 @@ button{
   height:auto;
   width:100%;
   background-color: #69140E;
-  color:white;
 }
+
 
 footer a {
   text-decoration: underline;
-  color:lightslategrey;
 }
