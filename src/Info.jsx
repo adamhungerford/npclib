@@ -8,7 +8,6 @@ class Info extends Component{
     }
 
     discoverSrc(details){
-        console.log(details);
         if(details === "" || details === null || details === undefined ){
             return(<></>);
         } else {
@@ -17,9 +16,9 @@ class Info extends Component{
                 <h1>{details.name}</h1>
                 <h3>{details.pronouns}</h3>
                 <p><i>{details.description}</i></p>
-                <img src={details.url} alt={details.name} 
-                    className="infoPortrait" width="250px" height="250px"></img>
             </div>
+            <img src={details.url} alt={details.name} 
+                className="infoPortrait" width="250px" height="250px"></img>
         </aside>);
         }
     }

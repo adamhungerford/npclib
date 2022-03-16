@@ -71,14 +71,74 @@ header {
 }
 
 main {
-    text-align:center;
-    padding:10px;
+  text-align:center;
+  padding:10px;
 }
 
-aside {
-    height:45%;
-    padding: 10px;
-    color:black;
+#info {
+  height:45%;
+  padding: 10px;
+  color:black;
+}
+
+.toggleContainer {
+  position:relative;
+  margin-bottom: 20px;
+}
+
+#recapToggle {
+  border: 5px double white;
+  position:absolute;
+  top:0px;
+  right:0px;
+  width:40%;
+  background: url(3859499.jpg), #69140E;
+  color:white;
+  padding: 0 10px 0 10px;
+}
+
+#recap {
+  position:absolute;
+  top:0;
+  left:0;
+  max-width:1fr;
+  overflow:scroll;
+  word-wrap: break-word;
+  background-color:#F2F3AE;
+  border: 5px double white;
+  z-index: 4;
+  padding:10px;
+}
+
+.recap-enter {
+  opacity:0;
+  transform: scale(0.9);
+}
+
+.recap-enter-active {
+  opacity:1;
+  transform: translateX(0);
+  transition: opacity 400ms, transform 300ms;
+}
+
+.recap-exit {
+  opacity: 1;
+}
+
+.recap-exit-active {
+  opacity: 0;
+  transition: opacity 400ms;
+}
+
+#closeRecap {
+  position:absolute;
+  right:0;
+  top: 0;
+  color:white;
+  width:20px;
+  height:20px;
+  border-left:5px double white;
+  border-bottom: 5px double white;
 }
 
 aside * {
@@ -102,8 +162,11 @@ button{
   font-family: inherit;
   border:0;
   height:auto;
-  width:100%;
+  width:50%;
   background-color: #69140E;
+  color:white;
+  display:block;
+  margin: 10px auto 10px auto;
 }
 
 
