@@ -37,18 +37,9 @@ function App() {
         </CSSTransition>
 
         <Info details={details}/>
-
-        <CSSTransition
-        in={gridDisplay}
-        timeout={200}
-        classNames="recap"
-        unmountOnExit
-        onEnter={() => setGridDisplay(true)}
-        onExit={() => setGridDisplay(false)}>
-          <main>
-            <Grid details={details} setDetails={setDetails} />
-          </main>
-        </CSSTransition>        
+        <main>
+          <Grid details={details} setDetails={setDetails} />
+        </main>    
         <footer>
         <a href="https://www.flaticon.com/free-icons/dragon" 
         title="dragon icons">Dragon favicon created by Freepik - Flaticon</a> | <a 

@@ -37,7 +37,7 @@ class Grid extends Component{
         <div className="gridContainer">
             {this.state.library.map((val, key) => {
             return(<>
-                    <h1>{val.header}</h1>
+                    <h1 id={val.header}>{val.header}</h1>
                     <div className="grid">
                         {val.characters.map((v2, k2) => {
                             return(

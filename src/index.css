@@ -98,8 +98,9 @@ main {
 }
 
 #recap {
-  position:absolute;
+  position:fixed;
   top:0;
+  bottom:0;
   left:0;
   max-width:1fr;
   overflow:scroll;
@@ -132,13 +133,13 @@ main {
 
 #closeRecap {
   position:absolute;
-  right:0;
+  right:10px;
   top: 0;
   color:white;
-  width:20px;
-  height:20px;
-  border-left:5px double white;
-  border-bottom: 5px double white;
+  width:30px;
+  height:30px;
+  border:5px double white;
+  
 }
 
 aside * {
@@ -167,6 +168,7 @@ button{
   color:white;
   display:block;
   margin: 10px auto 10px auto;
+  border: 5px double white;
 }
 
 
