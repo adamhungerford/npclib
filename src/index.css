@@ -133,12 +133,13 @@ main {
 
 #closeRecap {
   position:absolute;
-  right:10px;
+  right:0;
   top: 0;
   color:white;
   width:30px;
   height:30px;
   border:5px double white;
+  margin:0;
   
 }
 
@@ -171,21 +172,12 @@ button{
   border: 5px double white;
 }
 
+#recap p {
+  text-align: left;
+  text-indent: 10px;
+}
 
 footer a {
   text-decoration: underline;
 }
 
-.sandwich {
-  border-left:5px double white;
-  border-right: 5px double white;
-  border-top: none;
-  border-bottom: none;
-}
-
-.sandwichEnd {
-  border-left:5px double white;
-  border-right: 5px double white;
-  border-top: none;
-  border-bottom: 5px double white;
-}

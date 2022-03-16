@@ -119,9 +119,34 @@
         width:50%;
         height:auto;
         top:10px;
-        bottom:0;
+        bottom:10px;
         left:auto;
         right:auto;
+        background-color: none;
+        border: none;
+        padding: 0
+
     }
+
+    #recap header {
+        position:sticky;
+        top:0;
+    }
+
+    .sandwich {
+        border-left:5px double white;
+        border-right: 5px double white;
+        border-top: none;
+        border-bottom: none;
+      }
+      
+      .sandwichEnd {
+        border-left:5px double white;
+        border-right: 5px double white;
+        border-top: none;
+        border-bottom: 5px double white;
+        position:sticky;
+        bottom:0;
+      }
 
 }

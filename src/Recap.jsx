@@ -56,19 +56,31 @@ class Recap extends Component{
                 {this.state.story.map((val, key) =>{
                     return(
                         <>
-                            <header>{val.actName}</header>
+                            <header style={{ "box-shadow": `none`, "margin-top": "0"}}><h1 id={val.actName}>{val.actName}</h1></header>
                             {val.sessions.map((v2, k2) => {
                                 return(
-                                    <>
-                                        {v2.recap}
-                                        <i>{v2.stinger}</i>
-                                    </>
+                                    <main className="sandwich" style={{ "box-shadow": `none`}}>
+                                        <h2 id={v2.title}>{v2.title}</h2>
+                                        {v2.recap.split("\n").map((v3, k3) => {
+                                            return(
+                                            <>
+                                                <p>{v3}</p>
+                                            </>)
+                                        })}
+                                        <p><i>{v2.stinger}</i></p>
+                                    </main>
                                 )
                             })}
+                            
                         </>
                     )
                 })}
-                <button onClick={() => this.props.setRecapDisplay(false)}><h2>Close Recap</h2></button>
+                <main className="sandwichEnd" style={{ "box-shadow": `none`}}>
+                                <button onClick={() => this.props.setRecapDisplay(false)}>
+                                    <h2>Close Recap</h2>
+                                </button>
+                            </main>
+                
             </div>
         )
     }
