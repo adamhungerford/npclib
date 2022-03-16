@@ -2,26 +2,19 @@ import { useState } from 'react';
 import Grid from './Grid';
 import Header from './Header';
 import Info from './Info';
-import Recap from './Recap';
+import Recap from './Recap.jsx';
 import { CSSTransition } from "react-transition-group";
 
 function App() {
 
   const [details, setDetails] = useState("");
   const [recapDisplay, setRecapDisplay] = useState(false);
-  const [gridDisplay, setGridDisplay] = useState(true);
-
-  const toggleRecap = () => {
-    var boolStore = recapDisplay;
-    setRecapDisplay(gridDisplay);
-    setGridDisplay(boolStore);
-  }
 
   return (
     <div className="App">
         <Header />
           <div className="toggleContainer">
-              <aside id="recapToggle" onClick={() => toggleRecap()}>
+              <aside id="recapToggle" onClick={() => setRecapDisplay(true)}>
                 <h3>Recap</h3>
               </aside>
           </div>
@@ -33,7 +26,7 @@ function App() {
           unmountOnExit
           onEnter={() => setRecapDisplay(true)}
           onExit={() => setRecapDisplay(false)}>
-          <Recap toggleRecap={toggleRecap}/>
+          <Recap setRecapDisplay={setRecapDisplay}/>
         </CSSTransition>
 
         <Info details={details}/>

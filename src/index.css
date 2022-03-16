@@ -102,7 +102,7 @@ main {
   top:0;
   bottom:0;
   left:0;
-  max-width:1fr;
+  right:0;
   overflow:scroll;
   word-wrap: break-word;
   background-color:#F2F3AE;
@@ -174,4 +174,18 @@ button{
 
 footer a {
   text-decoration: underline;
+}
+
+.sandwich {
+  border-left:5px double white;
+  border-right: 5px double white;
+  border-top: none;
+  border-bottom: none;
+}
+
+.sandwichEnd {
+  border-left:5px double white;
+  border-right: 5px double white;
+  border-top: none;
+  border-bottom: 5px double white;
 }

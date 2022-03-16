@@ -1,18 +1,19 @@
 import React, {Component} from "react";
+import story from "./story";
 
 class Recap extends Component{
     constructor(props){
         super(props);
         this.state = {
-            
+            story: story().Story,
         }
     }
 
     render(){
         return(
             <div id="recap">
-                <button id="closeRecap" onClick={() => this.props.toggleRecap()}>X</button>
-                <h1>ACT 1: WIDESEAL</h1>
+                <button id="closeRecap" onClick={() => this.props.setRecapDisplay(false)}>X</button>
+                {/* <h1>ACT 1: WIDESEAL</h1>
 
                 <h2>Session 0: The Eternal Burning</h2>
                 Ten years ago, the world exploded. A cataclysmic firestorm called the Eternal Burning, or the Burning for short, razed most of civilization to the ground. The few cities that survived became authoritarian, walled-off settlements. You are refugees living in Wideseal, a recently-established safe haven. Wideseal provides safety from the dragons and other threats, but its nascency means most citizens are forced to work hard labor for long hours to keep the settlement running. While the dragons pose a constant threat, the city also suffers sabotage from within by the eschatological cults which have sprung up since the Burning began. Can you avoid the ire of the Wideseal lawmages, keep yourself out of the scuffles between the cults, and dodge deadly dragonfire - all while trying to make ends meet?
@@ -51,9 +52,23 @@ class Recap extends Component{
                 <br />The next morning, Enmides outlines our heroes' first job (and wakes Gal up courtesy of the egg of the Wideseal Ostrich). The Gyle Oil Well has been experiencing subtle acts of sabotage - the party is to find out who is responsible and to stop them. (They are also to retrieve one vial of Gyle Oil.) The kahmogi Gyle twins greet the party at the door, though they seem somewhat hostile to each other. Arle Gyle, the mechanic, hands the party off to her brother Lyster (the bookkeeper), who leads them on the tour. Along the way, a troubled Lyster explains the situation - each Gyle suspects the other of sabotage, and mysterious scorch marks have started to appear around the building. 
                 <br />In the gift shop, the party convinces Lyster to talk to his sister openly, but he returns as quickly as he went with terrible news: Arle has mysteriously fallen unconscious!
                 <br />
-                <i>Because chameleons are ectothermic, another reason why they change colour is to regulate their body temperatures, either to a darker colour to absorb light and heat to raise their temperature, or to a lighter colour to reflect light and heat, thereby either stabilizing or lowering their body temperature.</i>
-            
-                <button onClick={() => this.props.toggleRecap()}><h2>Close Recap</h2></button>
+                <i>Because chameleons are ectothermic, another reason why they change colour is to regulate their body temperatures, either to a darker colour to absorb light and heat to raise their temperature, or to a lighter colour to reflect light and heat, thereby either stabilizing or lowering their body temperature.</i> */}
+                {this.state.story.map((val, key) =>{
+                    return(
+                        <>
+                            <header>{val.actName}</header>
+                            {val.sessions.map((v2, k2) => {
+                                return(
+                                    <>
+                                        {v2.recap}
+                                        <i>{v2.stinger}</i>
+                                    </>
+                                )
+                            })}
+                        </>
+                    )
+                })}
+                <button onClick={() => this.props.setRecapDisplay(false)}><h2>Close Recap</h2></button>
             </div>
         )
     }
