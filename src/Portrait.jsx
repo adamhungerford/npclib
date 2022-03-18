@@ -1,31 +1,35 @@
-import { Component } from "react";
+import { Component, useState } from "react";
+import { CSSTransition } from "react-transition-group";
 
-class Portrait extends Component{
-    constructor(props){
-        super(props);
-        this.state = {
-            name: this.props.properties.name,
-            pronouns: this.props.properties.pronouns,
-            description: this.props.properties.description,
-            photo: this.props.properties.url,
-        }
-        this.changeName = this.changeName.bind(this)
-    }
+function Portrait(props){
+    
+    const [properties, setProperties] = useState(props.properties)
+    // const [name, setName] = useState(props.properties.name);
+    // const [pronouns, setPronouns] = useState(props.properties.pronouns);
+    // const [description, setDescription] = props.properties.description;
+    // const photo = props.properties.url;
+    const [portraitDisplay, setPortraitDisplay] = useState(false);
 
-    changeName(){
-        this.props.setDetails(this.props.properties);
+    //this.changeName = this.changeName.bind(this)
+
+    const changeName = () => {
+        props.setDetails(properties);
     }    
 
-    render(){
-        return(
+    return(
+        <CSSTransition
+            in={portraitDisplay}
+            timeout={500}
+            classNames="portraitAnim">
             <div className="portrait">
-                <div className="tint" onMouseOver={this.changeName} />
+                <div className="tint" onMouseOver={changeName} />
                 <div className="portrait-content">
-                    <img src={this.state.photo} alt={this.state.name}></img>
+                    <img src={properties.url} alt={properties.name}></img>
                 </div>
             </div>
-        );
-    }
+        </CSSTransition>
+    );
+    
 }
 
 export default Portrait;
