@@ -93,6 +93,7 @@ main {
   right:0px;
   width:40%;
   background: url(3859499.jpg), #69140E;
+  background-size:cover;
   color:white;
   padding: 0 10px 0 10px;
 }
