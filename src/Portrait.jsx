@@ -1,4 +1,4 @@
-import { Component, useState } from "react";
+import { useState, useEffect } from "react";
 import { CSSTransition } from "react-transition-group";
 
 function Portrait(props){
@@ -16,11 +16,18 @@ function Portrait(props){
         props.setDetails(properties);
     }    
 
+    useEffect(() =>{
+        setPortraitDisplay(true);
+    }, [])
+
     return(
         <CSSTransition
             in={portraitDisplay}
             timeout={500}
-            classNames="portraitAnim">
+            classNames="portraitAnim"
+            unmountOnExit
+            onEnter={() => setPortraitDisplay(true)}
+            onExit={() => setPortraitDisplay(false)}>
             <div className="portrait">
                 <div className="tint" onMouseOver={changeName} />
                 <div className="portrait-content">

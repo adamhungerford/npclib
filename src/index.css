@@ -177,6 +177,13 @@ button{
   text-indent: 10px;
 }
 
+#recap .stinger {
+  text-indent: 0;
+  text-align: justify;
+  padding-left: 15px;
+  padding-right: 15px;
+}
+
 footer a {
   text-decoration: underline;
 }
@@ -187,6 +194,6 @@ footer a {
 
 .portraitAnim-enter-active {
   opacity: 1;
-  transition: opacity 2s;
+  transition: opacity 400ms;
 }
 
