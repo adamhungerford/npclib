@@ -112,6 +112,11 @@
         
     }
 
+    #recapToggle {
+        right:-120px;
+        z-index:-1;
+    }
+
     #recap {
         position:fixed;
         overflow-y: scroll;
@@ -128,25 +133,6 @@
 
     }
 
-    #recap header {
-        position:sticky;
-        top:0;
-    }
-
-    .sandwich {
-        border-left:5px double white;
-        border-right: 5px double white;
-        border-top: none;
-        border-bottom: none;
-      }
-      
-      .sandwichEnd {
-        border-left:5px double white;
-        border-right: 5px double white;
-        border-top: none;
-        border-bottom: 5px double white;
-        position:sticky;
-        bottom:0;
-      }
+    
 
 }

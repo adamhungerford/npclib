@@ -35,7 +35,7 @@ function lib(){
             "url": "https://cdn.discordapp.com/attachments/837882618799849563/943860166380621844/20220212_024008.jpg"},
 
             //Zeereth
-            {"name": "Zeereth Vrinn", "pronouns": "she/her", "description": "This gung-ho drow is a mutual friend of Gal's and Piper's.",
+            {"name": "Zeereth Vrinn", "pronouns": "she/her", "description": "This gung-ho drow is a mutual friend of Gal's and Piper's. Has a bit of an aromatherapy habit.",
             "url": "https://cdn.discordapp.com/attachments/837882618799849563/943890980220850176/zeereth.JPG"}
             ]},
         
