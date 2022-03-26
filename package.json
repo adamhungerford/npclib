@@ -1,7 +1,7 @@
 {
   "name": "npclib",
   "version": "0.1.0",
-  "homepage": "https://npclib.edsite.black",
+  "homepage": "https://gradia.edsite.black",
   "private": true,
   "dependencies": {
     "@testing-library/jest-dom": "^5.16.2",
