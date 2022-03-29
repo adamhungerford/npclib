@@ -40,7 +40,6 @@
     }
 
     main{
-        background-color: #F2F3AE;
         border-left: 5px double white;
         border-right: 5px double white;
         border-bottom: 5px double white;
@@ -82,7 +81,6 @@
     }
 
     .infoPortrait {
-        border:0;
         width:100%;
         height:100%;
     }

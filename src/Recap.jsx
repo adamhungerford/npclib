@@ -6,6 +6,7 @@ class Recap extends Component{
         super(props);
         this.state = {
             story: story().Story,
+            headerArray: null,
         }
     }
 
