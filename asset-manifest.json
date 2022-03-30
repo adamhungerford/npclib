@@ -1,17 +1,17 @@
 {
   "files": {
-    "main.css": "/static/css/main.b7455210.css",
+    "main.css": "/static/css/main.7779dcf4.css",
     "main.js": "/static/js/main.7b97a74c.js",
     "static/js/787.b0c91402.chunk.js": "/static/js/787.b0c91402.chunk.js",
-    "static/media/superstition_mountain,_apache_trail,_arizona_(no.1)_1986.60.9.jpg": "/static/media/superstition_mountain,_apache_trail,_arizona_(no.1)_1986.60.9.d7565581f0d980cb0da7.jpg",
+    "static/media/superstition_mountain_apache_trail_arizona_(no.1)_1986.60.9.jpg": "/static/media/superstition_mountain_apache_trail_arizona_(no.1)_1986.60.9.d7565581f0d980cb0da7.jpg",
     "static/media/3859499.jpg": "/static/media/3859499.57b2d6aeb5e48fef1950.jpg",
     "index.html": "/index.html",
-    "main.b7455210.css.map": "/static/css/main.b7455210.css.map",
+    "main.7779dcf4.css.map": "/static/css/main.7779dcf4.css.map",
     "main.7b97a74c.js.map": "/static/js/main.7b97a74c.js.map",
     "787.b0c91402.chunk.js.map": "/static/js/787.b0c91402.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.b7455210.css",
+    "static/css/main.7779dcf4.css",
     "static/js/main.7b97a74c.js"
   ]
 }
