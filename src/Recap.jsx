@@ -10,6 +10,23 @@ class Recap extends Component{
         }
     }
 
+    getHeaders(){
+        var headers = [];
+
+        this.state.story.forEach(element => {
+            headers.push(element.actName);
+            element.sessions.forEach(e2 => {
+                headers.push(e2.title);
+            })
+        });
+
+        console.log(headers);
+    }
+
+    componentDidMount(){
+        this.setState({headerArray: this.getHeaders()})
+    }
+
     render(){
         return(
             <div id="recap">
