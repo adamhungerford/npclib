@@ -21,7 +21,7 @@
     "test": "react-scripts test",
     "eject": "react-scripts eject",
 
-    "sassify": "sass src/index.scss src/index.css"
+    "sassify": "sass src/css/index.scss src/css/index.css & sass src/css/desktop.scss src/css/desktop.css"
 
   },
   "eslintConfig": {

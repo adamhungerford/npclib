@@ -1,0 +1,130 @@
+@media screen and (max-width: 1105px) {
+  .grid {
+    grid-template-columns: repeat(3, 125px);
+  }
+}
+@media screen and (min-width: 1105px) {
+  .grid {
+    grid-template-columns: repeat(4, 125px);
+    grid-auto-rows: minmax(125px);
+  }
+}
+@media screen and (max-width: 950px) {
+  .grid {
+    grid-template-columns: repeat(3, 100px);
+    grid-auto-rows: minmax(100px);
+  }
+}
+@media screen and (min-width: 950px) {
+  html {
+    background-image: url("../img/superstition_mountain_apache_trail_arizona_(no.1)_1986.60.9.jpg");
+    background-position: 50% 0%;
+    background-size: cover;
+    background-attachment: fixed;
+  }
+
+  body {
+    width: 50%;
+    margin-left: auto;
+    margin-right: auto;
+    background-color: transparent;
+    position: relative;
+  }
+
+  main h1 {
+    margin-top: 0;
+    padding-top: 20px;
+  }
+
+  main {
+    border-left: 5px double white;
+    border-right: 5px double white;
+    border-bottom: 5px double white;
+    margin: 0;
+    max-height: 100%;
+  }
+
+  main, header, aside, #recap {
+    box-shadow: 0px 5px 8px black;
+  }
+
+  header {
+    margin-top: 10px;
+  }
+
+  footer {
+    margin-bottom: 10px;
+    border: none;
+    background-color: rgba(0, 0, 0, 0.5);
+    color: white;
+  }
+
+  footer a {
+    color: white;
+  }
+
+  #info {
+    position: fixed;
+    top: 10px;
+    left: 10px;
+    width: 20%;
+    /* background-image: linear-gradient(
+        to right, rgba(0,0,0,0.7) 90%, rgba(0, 0, 0, 0)); */
+    height: max-content;
+    color: white;
+    border: 5px double white;
+    background: url(../img/3859499.jpg), #69140E;
+    background-size: cover;
+  }
+
+  .infoPortrait {
+    width: 100%;
+    height: 100%;
+  }
+
+  .gridContainer {
+    max-height: 100%;
+    overflow: visible;
+  }
+
+  .portrait {
+    height: 125px;
+  }
+
+  .tint {
+    position: absolute;
+    width: 125px;
+    height: 125px;
+  }
+
+  .portrait-content img {
+    height: 125px;
+    width: 125px;
+  }
+
+  .toggleContainer {
+    margin-bottom: 0;
+  }
+
+  #recapToggle {
+    right: -120px;
+    z-index: -1;
+  }
+
+  #recap {
+    position: fixed;
+    overflow-y: scroll;
+    overflow-x: hidden;
+    width: 50%;
+    height: auto;
+    top: 10px;
+    bottom: 10px;
+    left: auto;
+    right: auto;
+    background-color: none;
+    border: none;
+    padding: 0;
+  }
+}
+
+/*# sourceMappingURL=desktop.css.map */

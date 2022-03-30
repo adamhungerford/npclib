@@ -4,7 +4,7 @@
 
 body {
   margin: 0;
-  background-color: #ccccc6;
+  background-color: #cccccc;
 }
 
 h1, h2, h3 {
@@ -18,7 +18,7 @@ h4 {
 
 header {
   text-align: center;
-  background: url(3859499.jpg), #69140E;
+  background: url(../img/3859499.jpg), #69140E;
   background-size: cover;
   color: whitesmoke;
   border: 5px double white;
@@ -71,7 +71,7 @@ header {
 main {
   text-align: center;
   padding: 10px;
-  background-color: #ccccc6;
+  background-color: #cccccc;
 }
 
 #info {
@@ -91,7 +91,7 @@ main {
   top: 0px;
   right: 0px;
   width: 40%;
-  background: url(3859499.jpg), #69140E;
+  background: url(../img/3859499.jpg), #69140E;
   background-size: cover;
   color: white;
   padding: 0 10px 0 10px;
@@ -162,7 +162,8 @@ button {
   border: 0;
   height: auto;
   width: 50%;
-  background-color: #69140E;
+  background: url(../img/3859499.jpg), #69140E;
+  background-size: cover;
   color: white;
   display: block;
   margin: 10px auto 10px auto;

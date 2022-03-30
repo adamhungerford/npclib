@@ -1,10 +1,4 @@
-// colors
-$body: #ccccc6;
-$header: #69140E;
-$gridPortrait: #A44200;
-$infoBorder: rgb(71,46,0);
-$tintColor: rgb(0,0,0);
-$componentBorder: 5px double white;
+@import "vars";
 
 .App {
     font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
@@ -26,7 +20,7 @@ h4 {
 
 header {
   text-align: center;
-  background: url(3859499.jpg), $header;
+  background: $headerImg, $header;
   background-size:cover;
   color:whitesmoke;
   border:$componentBorder;
@@ -101,7 +95,7 @@ main {
   top:0px;
   right:0px;
   width:40%;
-  background: url(3859499.jpg), $header;
+  background: $headerImg, $header;
   background-size:cover;
   color:white;
   padding: 0 10px 0 10px;
@@ -173,7 +167,8 @@ button{
   border:0;
   height:auto;
   width:50%;
-  background-color: $header;
+  background: $headerImg, $header;
+  background-size:cover;
   color:white;
   display:block;
   margin: 10px auto 10px auto;
