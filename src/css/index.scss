@@ -89,6 +89,10 @@ main {
   margin-bottom: 20px;
 }
 
+#recapNav {
+  display:none;
+}
+
 #recapToggle {
   border: $componentBorder;
   position:absolute;

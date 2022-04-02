@@ -85,6 +85,10 @@ main {
   margin-bottom: 20px;
 }
 
+#recapNav {
+  display: none;
+}
+
 #recapToggle {
   border: 5px double white;
   position: absolute;

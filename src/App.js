@@ -4,6 +4,7 @@ import Header from './Header';
 import Info from './Info';
 import Recap from './Recap.jsx';
 import { CSSTransition } from "react-transition-group";
+import RecapNav from './RecapNav';
 
 function App() {
 
@@ -13,6 +14,7 @@ function App() {
   return (
     <div className="App">
         <Header />
+
           <div className="toggleContainer">
               <aside id="recapToggle" onClick={() => setRecapDisplay(true)}>
                 <h3>Recap</h3>
@@ -28,6 +30,16 @@ function App() {
           onExit={() => setRecapDisplay(false)}>
           <Recap setRecapDisplay={setRecapDisplay}/>
         </CSSTransition>
+
+        <CSSTransition
+          in={recapDisplay}
+          timeout={200}
+          classNames="recap"
+          unmountOnExit
+          onEnter={() => setRecapDisplay(true)}
+          onExit={() => setRecapDisplay(false)}>
+            <RecapNav />
+          </CSSTransition>
 
         <Info details={details}/>
         <main>
