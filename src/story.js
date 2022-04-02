@@ -1,4 +1,4 @@
-function story(){
+function story(need){
     const Story = {"Story":[
         {"actName": "Act 1: Wideseal", "sessions":[
             {"title": "Session 0: The Eternal Burning",
@@ -47,7 +47,20 @@ function story(){
         ]}
     ]}
 
-    return Story;
+    var headers = [];
+
+    Story.Story.forEach(element => {
+        headers.push(element.actName);
+        element.sessions.forEach(e2 => {
+            headers.push(e2.title);
+        })
+    });
+
+    if(need === "story"){
+        return Story.Story
+    } else {
+        return headers
+    }
 }
 
 export default story;

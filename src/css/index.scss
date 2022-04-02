@@ -136,15 +136,15 @@ main {
 }
 
 #closeRecap {
-  position:absolute;
-  right:0;
-  top: 0;
-  color:white;
-  width:30px;
-  height:30px;
-  border:$componentBorder;
-  margin:0;
-  
+  // position:absolute;
+  // right:0;
+  // top: 0;
+  // color:white;
+  // width:30px;
+  // height:30px;
+  // border:$componentBorder;
+  // margin:0;
+  display:inline;
 }
 
 aside * {
@@ -204,6 +204,10 @@ footer a {
   top:0;
 }
 
+.recapHeader {
+  scroll-margin-top: 120px;
+}
+
 .sandwich {
   border-left:$componentBorder;
   border-right: $componentBorder;
@@ -218,4 +222,14 @@ footer a {
   border-bottom: $componentBorder;
   position:sticky;
   bottom:0;
+}
+
+#next{
+  width:20%;
+  float:right;
+}
+
+#prev {
+  width:20%;
+  float:left;
 }

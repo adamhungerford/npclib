@@ -12,10 +12,6 @@ h1, h2, h3 {
   text-transform: uppercase;
 }
 
-h2 {
-  top: 20px;
-}
-
 h4 {
   text-transform: uppercase;
 }
@@ -136,14 +132,7 @@ main {
 }
 
 #closeRecap {
-  position: absolute;
-  right: 0;
-  top: 0;
-  color: white;
-  width: 30px;
-  height: 30px;
-  border: 5px double white;
-  margin: 0;
+  display: inline;
 }
 
 aside * {
@@ -203,6 +192,10 @@ footer a {
   top: 0;
 }
 
+.recapHeader {
+  scroll-margin-top: 120px;
+}
+
 .sandwich {
   border-left: 5px double white;
   border-right: 5px double white;
@@ -217,6 +210,16 @@ footer a {
   border-bottom: 5px double white;
   position: sticky;
   bottom: 0;
+}
+
+#next {
+  width: 20%;
+  float: right;
+}
+
+#prev {
+  width: 20%;
+  float: left;
 }
 
 /*# sourceMappingURL=index.css.map */
