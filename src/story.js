@@ -44,6 +44,12 @@ function story(need){
             Insisting on helping their friend, Piper and Gal go through the door anyway, reuniting Zeereth with her feelings. However, they are forced to confront Zeereth's Ego, which has taken the form of a gigantic puppet. Despite the party (plus Zeereth) sustaining heavy blows from the puppet, Zeereth is able to stop the onslaught with a well-placed Eldritch Blast.
             Upon exiting the portal, Piper and Gal encourage Zeereth to do some soul-searching, instead of taking the easy way out of dealing with her feelings. Zeereth agrees to do so, and decides it's time to get some rest.`,
             "stinger": "This has been a semi-canon one-shot. Now back to your regular programming."},
+
+            {"title": "Session 5: Good Grease",
+            "recap": `Following Lyster into the side room, the party is surprised to find Arle gone, and a trail of scorch marks found by the Mariner leading deeper into the refinery! From the vents appears a cohort of tiny fire elementals, which threaten the integrity of the well if left unchecked. After dispatching them, the group ventures further into the mine, solving a problem with the distillation on the way down. 
+            Upon entering the antechamber, they find something strange: a large rock. Piper deduces that it is magical in nature, and Gal hoists it clear off the ground, revealing an earth genasi (Fortinbras) sheltering an Aliam teenager (Skipo). Fortinbras is here after phasing through the earth while searching for a place to hoist her Porp-Up Shorp. Skipo has been traveling with her. Deciding that this has entirely nothing to do with them, the party plus Lyster dashes into the well proper, where they see a host of Sparklings scattered about, with a particularly big elemental attempting to use the drill to gain direct access to the oil! What's worse, Arle Gyle is unconscious directly beside it, having inhaled a critical mass of smoke.
+            The group (including a sneaky little Skipo) launches into action, battling for control of the well and its centerpiece, the drill. Will our heroes be able to save the well, or will Wideseal go up in smoke?`,
+            "stringer": "An oil well is a boring in the Earth that is designed to bring petroleum oil hydrocarbons to the surface. Usually some natural gas is released as associated petroleum gas along with the oil."},
         ]}
     ]}
 

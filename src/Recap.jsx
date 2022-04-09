@@ -38,7 +38,7 @@ class Recap extends Component{
                 })}
                 <main className="sandwichEnd" style={{ "box-shadow": `none`}}>
                     <a href={"#" + this.state.headerArray[this.props.headerIndex % this.state.headerArray.length]}>
-                        <button onClick={() => this.props.setHeaderIndex(this.props.headerIndex -1 < 0? 0: this.props.headerIndex -1)} id="prev">
+                        <button onClick={() => this.props.setHeaderIndex((this.props.headerIndex -1) < 0? this.state.headerArray.length-1 : this.props.headerIndex -1)} id="prev">
                             <h2>&#60;&#60;</h2>
                         </button>
                     </a>
@@ -48,7 +48,7 @@ class Recap extends Component{
                     </button>
 
                     <a href={"#" + this.state.headerArray[this.props.headerIndex % this.state.headerArray.length]}>
-                        <button onClick={() => this.props.setHeaderIndex(this.props.headerIndex +1)} id="next">
+                        <button onClick={() => this.props.setHeaderIndex((this.props.headerIndex + 1) > this.state.headerArray.length - 1? 0 : this.props.headerIndex + 1)} id="next">
                             <h2>&#62;&#62;</h2>
                         </button>
                     </a>

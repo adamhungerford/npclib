@@ -29,7 +29,7 @@ function App() {
           unmountOnExit
           onEnter={() => setRecapDisplay(true)}
           onExit={() => setRecapDisplay(false)}>
-          <Recap headerIndex={headerIndex} setHeaderIndex={setHeaderIndex} setRecapDisplay={setRecapDisplay}/>
+            <Recap headerIndex={headerIndex} setHeaderIndex={setHeaderIndex} setRecapDisplay={setRecapDisplay}/>
         </CSSTransition>
 
         <CSSTransition

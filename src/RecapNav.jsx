@@ -4,12 +4,12 @@ import story from "./story";
 function RecapNav (headerIndex, setHeaderIndex) {
 
     const [headerArray] = useState(story("story"));
-    
+
     function updateHeaderVal(e){
         if(e.target.innerText.includes("Act")){
             var actIndex = headerArray.findIndex(
                 function(header) {
-                    return header.actName == e.target.innerText
+                    return header.actName === e.target.innerText
                 }
             )
             var wantedTitle = headerArray[actIndex].sessions[0].title;
