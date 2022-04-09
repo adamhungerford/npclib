@@ -8,6 +8,7 @@ import RecapNav from './RecapNav';
 
 function App() {
 
+  const [headerIndex, setHeaderIndex] = useState(0);
   const [details, setDetails] = useState("");
   const [recapDisplay, setRecapDisplay] = useState(false);
 
@@ -28,7 +29,7 @@ function App() {
           unmountOnExit
           onEnter={() => setRecapDisplay(true)}
           onExit={() => setRecapDisplay(false)}>
-          <Recap setRecapDisplay={setRecapDisplay}/>
+          <Recap headerIndex={headerIndex} setHeaderIndex={setHeaderIndex} setRecapDisplay={setRecapDisplay}/>
         </CSSTransition>
 
         <CSSTransition
@@ -38,7 +39,7 @@ function App() {
           unmountOnExit
           onEnter={() => setRecapDisplay(true)}
           onExit={() => setRecapDisplay(false)}>
-            <RecapNav />
+            <RecapNav headerIndex={headerIndex} setHeaderIndex={setHeaderIndex} />
           </CSSTransition>
 
         <Info details={details}/>
