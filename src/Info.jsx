@@ -9,9 +9,9 @@ class Info extends Component{
 
     discoverSrc(url){
         console.log(url);
-        if(url === "" || url === null || url === undefined){
-            return(<></>);
-        } else {
+        // if(url === "" || url === null || url === undefined){
+        //     return(<></>);
+        // } else {
             return(<aside id="info">
             <div className="asideText">
                 <h1>{this.props.details.name}</h1>
@@ -21,7 +21,7 @@ class Info extends Component{
                     className="infoPortrait" width="250px" height="250px"></img>
             </div>
         </aside>);
-        }
+        // }
     }
 
     render(){
