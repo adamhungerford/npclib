@@ -22,9 +22,9 @@ function lib(){
             {"name": "Guido Pilter", "pronouns": "he/him", "description": "The annoying ratfolk foreman.",
             "url": "https://cdn.discordapp.com/attachments/916569335336677396/916729655158009937/Guido.jpg"},
 
-            //Irving
-            {"name": "Irving Ballast", "pronouns": "any/all", "description": "Shifter member of the Wideseal Platoon. Bored with lookout duty, she collects stories, but he also requires an audience that meets his...standards.",
-            "url": ""},
+            // //Irving
+            // {"name": "Irving Ballast", "pronouns": "any/all", "description": "Shifter member of the Wideseal Platoon. Bored with lookout duty, she collects stories, but he also requires an audience that meets his...standards.",
+            // "url": ""},
 
             //Michael
             {"name": "Michael 'Mikey' Morgan", "pronouns": "she/her", "description": "The noctern (nocturnal intern) of the Gyle Oil Well and Refinery, who works Thursday nights.",
