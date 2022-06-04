@@ -18,7 +18,7 @@ h4 {
 
 header {
   text-align: center;
-  background: url(../img/3859499_citrus.jpg), #28166b;
+  background: url(../img/3859499_citrus.jpg), #ca4a00;
   background-size: cover;
   color: whitesmoke;
   border: 5px double white;
@@ -95,7 +95,7 @@ main {
   top: 0px;
   right: 0px;
   width: 40%;
-  background: url(../img/3859499_citrus.jpg), #28166b;
+  background: url(../img/3859499_citrus.jpg), #ca4a00;
   background-size: cover;
   color: white;
   padding: 0 10px 0 10px;
@@ -159,7 +159,7 @@ button {
   border: 0;
   height: auto;
   width: 50%;
-  background: url(../img/3859499_citrus.jpg), #28166b;
+  background: url(../img/3859499_citrus.jpg), #ca4a00;
   background-size: cover;
   color: white;
   display: block;
