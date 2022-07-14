@@ -63,7 +63,21 @@ function lib(){
             // //Puddle
             {"name": "Puddle", "pronouns": "he/him", "description": "The newest Mariner, and a big fan of the Mariner.",
             "url": "https://cdn.discordapp.com/attachments/837882618799849563/947158492731551785/20220226_104905.jpg"},
-            ]}
+            ]},
+
+        {"header": "Others", "characters":[
+            //Dr. Bonejaw
+            {"name": "Dr. Merrow Bonejaw", 
+            "pronouns": "he/him", 
+            "description": "A scientist from Numines. Used to work under Enmides, now works solely with his colleague Dr. Stonejaw. Allegedly does weird science.",
+            "url": ""},
+
+            //Dr. Stonejaw
+            {"name": "Dr. Wrett Stonejaw",
+            "pronouns": "she/her",
+            "description": "A scientist from Numines. A chemist by trade, and Dr. Bonejaw's colleague.",
+            "url": ""},
+        ]}
     ]}
 
     return Library;

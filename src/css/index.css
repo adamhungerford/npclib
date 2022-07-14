@@ -4,7 +4,7 @@
 
 body {
   margin: 0;
-  background-color: #fcffd4;
+  background-color: #fdfdfd;
 }
 
 h1, h2, h3 {
@@ -71,7 +71,7 @@ header {
 main {
   text-align: center;
   padding: 10px;
-  background-color: #fcffd4;
+  background-color: #fdfdfd;
 }
 
 #info {
