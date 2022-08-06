@@ -70,13 +70,13 @@ function lib(){
             {"name": "Dr. Merrow Bonejaw", 
             "pronouns": "he/him", 
             "description": "A scientist from Numines. Used to work under Enmides, now works solely with his colleague Dr. Stonejaw. Allegedly does weird science.",
-            "url": ""},
+            "url": "https://cdn.discordapp.com/attachments/916569335336677396/1005355655433048145/20220806_020310.jpg"},
 
             //Dr. Stonejaw
             {"name": "Dr. Wrett Stonejaw",
             "pronouns": "she/her",
             "description": "A scientist from Numines. A chemist by trade, and Dr. Bonejaw's colleague.",
-            "url": ""},
+            "url": "https://cdn.discordapp.com/attachments/916569335336677396/1005355655709863966/20220806_020350.jpg"},
         ]}
     ]}
 
