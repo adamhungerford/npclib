@@ -77,6 +77,18 @@ function lib(){
             "pronouns": "she/her",
             "description": "A scientist from Numines. A chemist by trade, and Dr. Bonejaw's colleague.",
             "url": "https://cdn.discordapp.com/attachments/916569335336677396/1005356693019963543/20220806_020310.jpg"},
+
+            //Velour
+            {"name": "Velour Quickheel",
+            "pronouns": "he/him",
+            "description": "A haughty soldier from Raidyll, under the command of Fresh Hunt.",
+            "url": "https://cdn.discordapp.com/attachments/916569335336677396/1013163185085362296/Velour.jpg"},
+
+            //Fresh Hunt
+            {"name": "Fresh Hunt",
+            "pronouns": "she/he",
+            "description": "A higher-up in the Raidyll guard. Her methods might seem harsh, but the results speak for themselves.",
+            "url": "https://cdn.discordapp.com/attachments/916569335336677396/1013163184733048872/Fresh_Hunt.jpg"},
         ]}
     ]}
 
