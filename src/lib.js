@@ -61,7 +61,7 @@ function lib(){
             "url": "https://cdn.discordapp.com/attachments/916569335336677396/916747294202814524/Nadir1.jpg"},
 
             // //Puddle
-            {"name": "Puddle", "pronouns": "he/him", "description": "The newest Mariner, and a big fan of the Mariner.",
+            {"name": "Puddle", "pronouns": "he/him", "description": "The newest Mariner, and a big fan of the Mariner. Recently deceased!",
             "url": "https://cdn.discordapp.com/attachments/837882618799849563/947158492731551785/20220226_104905.jpg"},
             ]},
 
