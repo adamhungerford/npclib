@@ -29,7 +29,7 @@ function Portrait(props){
             onEnter={() => setPortraitDisplay(true)}
             onExit={() => setPortraitDisplay(false)}>
             <div className="portrait">
-                <div className="tint" onMouseOver={changeName} />
+                <div className="tint" onClick={changeName} />
                 <div className="portrait-content">
                     <img src={properties.url} alt={properties.name}></img>
                 </div>
