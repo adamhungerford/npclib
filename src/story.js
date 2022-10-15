@@ -106,6 +106,14 @@ function story(need){
             But before they can get to the brigands who have taken their friend, they must brave a coral puzzle! Fortunately, it is almost as easy as defeating the pirate guarding it. The party is hot on the heels of Skipo's captors, following them into a room ankle-deep with water...
             ...only to find the pirates (almost) slain by a bipedal shark, who wants both the gold Skipo and the pirates carry and their organs! The fight is intense, but our heroes prevail, undoubtedly adding years to young Skipo's life. Payback, perhaps, for last time. The moral? If something smells fishy, it's probably pirates.`,
             "stinger": "This has been a semi-canon one-shot. Now back to your regular programming."},
+
+            {"title": "Session 9: Ontological Hitchhiker",
+            "recap": `Silt discloses that they work for neither the Platoon or the Mariners, and says that they feel that things might be at a tipping point. Advising them to use caution around Nadir, he bounds away, leaving the party to contemplate their next step.
+            Gal suggests they go look for the seller of Bonejaw's mineral water. There are three vendors set up in the location, one of whom is a hot dog culinarian with a certain despondent debonair. He makes eleven hot dogs while Gal berates him for not having a bigger rack. Meanwhile, Piper chats with Aarthi, who is set up in the smithy. Aarthi describes the mineral water seller as someone who matches a physical description of Nadir, mentioning that "that kid" who's always with Fortinbras might know some more. Loaded up with hot dogs and on a tight schedule, however, our heroes elect to visit the bunks.
+            Terry sleuths out Nadir's room, and once inside, the party is attacked by something they can't see. Looking around, their assailant is revealed to be an enchanted whip of water. A small battle ensues, with Piper eventually taking it out with a cold blast (that also catches her allies). But as Gal confronts Piper about what just happened, the Mariner's mind is elsewhere.
+            The Mariner sees a vision of two entities from other planes crashing down to the prime material plane - one red, one blue. They also sense something trying to get into their body...
+            With the room to themselves, the party investigates, finding shelves of mineral water like the phial Bonejaw had. No sooner do they find this, however, than Silt bursts in - he's just received a distress call from Guido!`,
+            "stinger": "SOS is a Morse code distress signal ( . . . - - - . . . ), used internationally, that was originally established for maritime use."},
         ]}
     ]}
 
