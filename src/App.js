@@ -1,4 +1,4 @@
-import { useState } from 'react';
+import { useEffect, useState } from 'react';
 import Grid from './Grid';
 import Header from './Header';
 import Info from './Info';
@@ -11,6 +11,25 @@ function App() {
   const [headerIndex, setHeaderIndex] = useState(0);
   const [details, setDetails] = useState("");
   const [recapDisplay, setRecapDisplay] = useState(false);
+
+  const [charData, setCharData] = useState([]);
+  const [recapData, setRecapData] = useState(false);
+
+  useEffect(() => { 
+    fetch("http://localhost:3001/characters")
+      .then((res) => res.json())
+      .then((json) => {
+        setCharData(json);
+      })
+
+    fetch("http://localhost:3001/story")
+      .then((res) => res.json())
+      .then((json) => {
+        setRecapData(json);
+      })
+    }, []);
+
+    console.log(charData)
 
   return (
     <div className="App">
@@ -44,7 +63,7 @@ function App() {
 
         <Info details={details}/>
         <main>
-          <Grid details={details} setDetails={setDetails} />
+          <Grid details={details} setDetails={setDetails} charData={charData} />
         </main>    
         <footer>
         <a href="https://www.flaticon.com/free-icons/dragon" 

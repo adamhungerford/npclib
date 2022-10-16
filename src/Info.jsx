@@ -19,6 +19,14 @@ class Info extends Component{
             </div>
             <img src={details.url} alt={details.name} 
                 className="infoPortrait" width="250px" height="250px"></img>
+            <details id="infoAppearances">
+            <summary>Appeared in:</summary>
+                <ul>
+                {details.appearances.map((appearance) => {
+                    return <li>{appearance.title}</li>
+                })}
+                </ul>
+            </details>
         </aside>);
         }
     }

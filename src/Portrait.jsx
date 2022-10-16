@@ -4,13 +4,7 @@ import { CSSTransition } from "react-transition-group";
 function Portrait(props){
     
     const [properties, setProperties] = useState(props.properties)
-    // const [name, setName] = useState(props.properties.name);
-    // const [pronouns, setPronouns] = useState(props.properties.pronouns);
-    // const [description, setDescription] = props.properties.description;
-    // const photo = props.properties.url;
     const [portraitDisplay, setPortraitDisplay] = useState(false);
-
-    //this.changeName = this.changeName.bind(this)
 
     const changeName = () => {
         props.setDetails(properties);
