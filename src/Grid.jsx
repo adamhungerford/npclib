@@ -20,20 +20,21 @@ class Grid extends Component{
     render(){
         return(
         <div className="gridContainer">            
-            {Array.from(new Set(this.props.charData.map((character) => character.affiliation))).map((affiliation) => {
+            {Array.from(new Set(this.props.charData.map(character => character.affiliation))).map((affiliation) => {
                 return(
-                    <>                    
-                        <h1>{affiliation}</h1>
-                        <div className="grid">
-                            {this.props.charData.map((character) => {
-                                if(affiliation == character.affiliation){
+                    <div key={affiliation}>                    
+                        <h1 key={affiliation + "Header"}>{affiliation}</h1>
+                        <div key={affiliation} className="grid">
+                            {this.props.charData.map(character => {
+                                if(affiliation === character.affiliation){
                                     return(
-                                        <Portrait properties={character} details={this.props.details} setDetails={this.props.setDetails}/>
+                                        <Portrait key={character.name} properties={character} details={this.props.details} setDetails={this.props.setDetails}/>
                                     )
                                 }
+                                return("");
                             })}
                         </div>
-                    </>
+                    </div>
                 )
             })}
         </div>

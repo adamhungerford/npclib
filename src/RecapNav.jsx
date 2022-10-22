@@ -1,46 +1,45 @@
-import { useState } from "react";
-import story from "./story";
+function RecapNav(props) {
 
-function RecapNav (headerIndex, setHeaderIndex) {
-
-    const [headerArray] = useState(story("story"));
+    var headerArray = [];
+    var actArray = Array.from(new Set(props.recapData.map(session => session.act)));
+    var sessionArray = props.recapData;
+    actArray.forEach(act => {
+        headerArray.push(act);
+        sessionArray.forEach(session => {
+            if(session.act === act){
+                headerArray.push(session.title);
+            }
+        })
+    })
 
     function updateHeaderVal(e){
-        if(e.target.innerText.includes("Act")){
-            var actIndex = headerArray.findIndex(
-                function(header) {
-                    return header.actName === e.target.innerText
-                }
-            )
-            var wantedTitle = headerArray[actIndex].sessions[0].title;
-            headerIndex.setHeaderIndex(story("headers").indexOf(wantedTitle));
-
-
-        } else {
-            headerIndex.setHeaderIndex(story("headers").indexOf(e.target.innerText));
-        }
+        return headerArray.indexOf(e.target.innerText);
     }
     
     return(
         <aside id="recapNav">
             <h2>Navigation</h2>
-            <ul style={{"padding": "0", "margin": "0", "margin-top": "10px"}}>
-            {headerArray.map((val, key) =>{
+            <ul style={{"padding": "0", "margin": "0", "marginTop": "10px"}}>
+            {Array.from(new Set(props.recapData.map(item => item.act))).map((act) =>{
                 return(
-                    <>
-                        <a href={"#" + val.actName} onClick={updateHeaderVal}>
-                            <li>{val.actName}</li>
+                    <div key={act}>
+                        <a key={act} href={"#" + act} onClick={updateHeaderVal}>
+                            <li key={act}>{act}</li>
                         </a>
-                        <ul>
-                        {val.sessions.map((v2, k2) => {
-                            return(
-                                <a href={"#" + v2.title}>
-                                    <li onClick={updateHeaderVal}>{v2.title}</li>
-                                </a>
-                            )
+                        <ul key={act + "List"}>
+                        {props.recapData.map(session => {
+                            if(session.act === act){
+                                return(
+                                    <a key={session.title} href={"#" + session.title}>
+                                        <li key={session.title} onClick={updateHeaderVal}>{session.title}</li>
+                                    </a>
+                                )
+                            } else {
+                                return "";
+                            }
                         })}
                         </ul> 
-                    </>
+                    </div>
                 )
             })}
             </ul>

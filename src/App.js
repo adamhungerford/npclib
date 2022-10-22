@@ -29,8 +29,6 @@ function App() {
       })
     }, []);
 
-    console.log(charData)
-
   return (
     <div className="App">
         <Header />
@@ -48,7 +46,7 @@ function App() {
           unmountOnExit
           onEnter={() => setRecapDisplay(true)}
           onExit={() => (setRecapDisplay(false), setHeaderIndex(0))}>
-            <Recap headerIndex={headerIndex} setHeaderIndex={setHeaderIndex} setRecapDisplay={setRecapDisplay}/>
+            <Recap headerIndex={headerIndex} setHeaderIndex={setHeaderIndex} setRecapDisplay={setRecapDisplay} recapData={recapData}/>
         </CSSTransition>
 
         <CSSTransition
@@ -58,7 +56,7 @@ function App() {
           unmountOnExit
           onEnter={() => setRecapDisplay(true)}
           onExit={() => setRecapDisplay(false)}>
-            <RecapNav headerIndex={headerIndex} setHeaderIndex={setHeaderIndex} />
+            <RecapNav headerIndex={headerIndex} setHeaderIndex={setHeaderIndex} recapData={recapData} />
           </CSSTransition>
 
         <Info details={details}/>
