@@ -23,7 +23,7 @@ class Info extends Component{
             <summary>Appeared in:</summary>
                 <ul>
                 {details.appearances.map((appearance) => {
-                    return <li>{appearance.title}</li>
+                    return <li key={appearance.appearance_id}>{appearance.title}</li>
                 })}
                 </ul>
             </details>

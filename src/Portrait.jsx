@@ -3,7 +3,7 @@ import { CSSTransition } from "react-transition-group";
 
 function Portrait(props){
     
-    const [properties, setProperties] = useState(props.properties)
+    const [properties] = useState(props.properties)
     const [portraitDisplay, setPortraitDisplay] = useState(false);
 
     const changeName = () => {

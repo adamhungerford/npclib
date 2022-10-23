@@ -1,16 +1,15 @@
 import React, {Component} from "react";
-import story from "./story";
 
 class Recap extends Component{
     constructor(props){
         super(props);
         this.state = {
-            story: story("story"),
-            headerArray: story("headers")
+            headerArray: props.recapData.map(session => session.title)
         }
     }
 
     render(){
+        console.log(this.props.headerIndex, this.state.headerArray[this.props.headerIndex])
         return(
             <div id="recap">
                 {Array.from(new Set(this.props.recapData.map(item => item.act))).map((act) =>{
@@ -36,21 +35,21 @@ class Recap extends Component{
                     )
                 })}
                 <main className="sandwichEnd" style={{ "boxShadow": `none`}}>
-                    <a href={"#" + this.state.headerArray[this.props.headerIndex % this.state.headerArray.length]}>
-                        <button onClick={() => this.props.setHeaderIndex((this.props.headerIndex -1) < 0? this.state.headerArray.length-1 : this.props.headerIndex -1)} id="prev">
+                    {/* <a href={"#" + this.state.headerArray[this.props.headerIndex - 1]}>
+                        <button onClick={() => this.props.setHeaderIndex((this.props.headerIndex -1) < 0? this.state.headerArray.length - 1 : this.props.headerIndex - 1)} id="prev">
                             <h2>&#60;&#60;</h2>
                         </button>
-                    </a>
+                    </a> */}
 
                     <button id="closeRecap" onClick={() => this.props.setRecapDisplay(false)}>
                         <h2>Close Recap</h2>
                     </button>
 
-                    <a href={"#" + this.state.headerArray[this.props.headerIndex % this.state.headerArray.length]}>
+                    {/* <a href={"#" + this.state.headerArray[this.props.headerIndex + 1]}>
                         <button onClick={() => this.props.setHeaderIndex((this.props.headerIndex + 1) > this.state.headerArray.length - 1? 0 : this.props.headerIndex + 1)} id="next">
                             <h2>&#62;&#62;</h2>
                         </button>
-                    </a>
+                    </a> */}
                 </main>
             </div>
         )
