@@ -15,10 +15,9 @@ function RecapNav(props) {
     function updateHeaderVal(e){
         if(e.target.innerText.includes("Act")){
             let actPlace = headerArray[headerArray.indexOf(e.target.innerText) + 1]
-            console.log(sessionArray)
             props.setHeaderIndex(sessionArray.map(session => session.title).indexOf(actPlace))
         } else props.setHeaderIndex(sessionArray.map(session => session.title).indexOf(e.target.innerText))
-        console.log(props.headerIndex)
+
     }
     
     return(

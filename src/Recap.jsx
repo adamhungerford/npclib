@@ -9,7 +9,6 @@ class Recap extends Component{
     }
 
     render(){
-        console.log(this.props.headerIndex, this.state.headerArray[this.props.headerIndex])
         return(
             <div id="recap">
                 {Array.from(new Set(this.props.recapData.map(item => item.act))).map((act) =>{
