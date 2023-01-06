@@ -7,19 +7,27 @@ function lib(){
             "url": "https://cdn.discordapp.com/attachments/837882618799849563/943860166758125578/20220212_023854.jpg"},
     
             // //Aarthi
-            {"name":"Aarthi Khatri", "pronouns": "she/her", "description": "A smith's apprentice. Always seems to have some injury or another.",
+            {"name":"Aarthi Khatri",
+            "pronouns": "she/her", 
+            "description": "A smith's apprentice. Always seems to have some injury or another.",
             "url": "https://cdn.discordapp.com/attachments/837882618799849563/943860167013969931/20220212_023940.jpg"},
 
             //Enmides
-            {"name": "Enmides Brook", "pronouns": "he/him", "description": "Dragonborn captain of the Raidyll Guard. Recently deputized our heroes.",
+            {"name": "Enmides Brook", 
+            "pronouns": "he/him", 
+            "description": "Dragonborn captain of the Raidyll Guard. Recently deputized our heroes.",
             "url": "https://cdn.discordapp.com/attachments/916569335336677396/916736124481831022/Enmides.jpg"},
 
             //Fortinbras
-            {"name": "Fortinbras", "pronouns": "she/her", "description": "Earth genasi and proprietor of Fort's Porp-Up Shorp.",
+            {"name": "Fortinbras", 
+            "pronouns": "she/her", 
+            "description": "Earth genasi and proprietor of Fort's Porp-Up Shorp.",
             "url": "https://cdn.discordapp.com/attachments/916569335336677396/962412381324071053/20220409_140141.jpg"},
 
             //Guido 
-            {"name": "Guido Pilter", "pronouns": "he/him", "description": "The annoying ratfolk foreman.",
+            {"name": "Guido Pilter", 
+            "pronouns": "he/him", 
+            "description": "The annoying ratfolk foreman.",
             "url": "https://cdn.discordapp.com/attachments/916569335336677396/916729655158009937/Guido.jpg"},
 
             // //Irving
@@ -27,23 +35,33 @@ function lib(){
             // "url": ""},
 
             //Michael
-            {"name": "Michael 'Mikey' Morgan", "pronouns": "she/her", "description": "The noctern (nocturnal intern) of the Gyle Oil Well and Refinery, who works Thursday nights.",
+            {"name": "Michael 'Mikey' Morgan", 
+            "pronouns": "she/her", 
+            "description": "The noctern (nocturnal intern) of the Gyle Oil Well and Refinery, who works Thursday nights.",
             "url": "https://cdn.discordapp.com/attachments/916569335336677396/981772594845990942/20220602_001258.jpg"},
 
             //Roke
-            {"name": "Roke Brassfist", "pronouns": "she/her", "description": "Dwarven sheriff of the Wideseal settlement, so named for her brass hand which replaced the one she lost in the Gradian catastrophe.",
+            {"name": "Roke Brassfist", 
+            "pronouns": "she/her", 
+            "description": "Dwarven sheriff of the Wideseal settlement, so named for her brass hand which replaced the one she lost in the Gradian catastrophe.",
             "url": "https://cdn.discordapp.com/attachments/916569335336677396/929412291265458206/Roke.jpg"},
 
             //Skipo
-            {"name": "Skipo", "pronouns": "he/him", "description": "Excitable young aliam bard. Idolizes anyone who claims or even appears to be an adventurer.",
+            {"name": "Skipo", 
+            "pronouns": "he/him", 
+            "description": "Excitable young aliam bard. Idolizes anyone who claims or even appears to be an adventurer.",
             "url": "https://cdn.discordapp.com/attachments/916569335336677396/962412381596688415/20220409_140144.jpg"},
 
             //The Gourd
-            {"name": "The Gradian Gourd", "pronouns": "N/A?", "description": "An automaton, or perhaps suit of armor, created within the Wideseal Enigma for an unknown purpose.",
+            {"name": "The Gradian Gourd", 
+            "pronouns": "N/A?", 
+            "description": "An automaton, or perhaps suit of armor, created within the Wideseal Enigma for an unknown purpose.",
             "url": "https://cdn.discordapp.com/attachments/837882618799849563/943860166380621844/20220212_024008.jpg"},
 
             //Zeereth
-            {"name": "Zeereth Vrinn", "pronouns": "she/her", "description": "This gung-ho drow is a mutual friend of Gal's and Piper's. Has a bit of an aromatherapy habit.",
+            {"name": "Zeereth Vrinn", 
+            "pronouns": "she/her", 
+            "description": "This gung-ho drow is a mutual friend of Gal's and Piper's. Has a bit of an aromatherapy habit.",
             "url": "https://cdn.discordapp.com/attachments/837882618799849563/943890980220850176/zeereth.JPG"}
             ]},
         

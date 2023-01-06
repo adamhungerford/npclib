@@ -15,7 +15,7 @@
   },
   "scripts": {
     "predeploy": "npm run sassify & npm run build",
-    "deploy": "gh-pages -d build",
+    "deploy": "react-scripts build && scp -r -i ~/gradia-droplet-key ./build/* root@159.223.186.204:/var/www/gradia-lib/html",
     "start": "npm run sassify & react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test",

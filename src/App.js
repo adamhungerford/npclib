@@ -1,4 +1,4 @@
-import { useState } from 'react';
+import { useEffect, useState } from 'react';
 import Grid from './Grid';
 import Header from './Header';
 import Info from './Info';
@@ -11,6 +11,23 @@ function App() {
   const [headerIndex, setHeaderIndex] = useState(0);
   const [details, setDetails] = useState("");
   const [recapDisplay, setRecapDisplay] = useState(false);
+
+  const [charData, setCharData] = useState([]);
+  const [recapData, setRecapData] = useState(false);
+
+  useEffect(() => { 
+    fetch("https://gradia.edsite.black/api/characters")
+      .then((res) => res.json())
+      .then((json) => {
+        setCharData(json);
+      })
+
+    fetch("https://gradia.edsite.black/api/story")
+      .then((res) => res.json())
+      .then((json) => {
+        setRecapData(json);
+      })
+    }, []);
 
   return (
     <div className="App">
@@ -29,7 +46,7 @@ function App() {
           unmountOnExit
           onEnter={() => setRecapDisplay(true)}
           onExit={() => (setRecapDisplay(false), setHeaderIndex(0))}>
-            <Recap headerIndex={headerIndex} setHeaderIndex={setHeaderIndex} setRecapDisplay={setRecapDisplay}/>
+            <Recap headerIndex={headerIndex} setHeaderIndex={setHeaderIndex} setRecapDisplay={setRecapDisplay} recapData={recapData}/>
         </CSSTransition>
 
         <CSSTransition
@@ -39,12 +56,12 @@ function App() {
           unmountOnExit
           onEnter={() => setRecapDisplay(true)}
           onExit={() => setRecapDisplay(false)}>
-            <RecapNav headerIndex={headerIndex} setHeaderIndex={setHeaderIndex} />
+            <RecapNav headerIndex={headerIndex} setHeaderIndex={setHeaderIndex} recapData={recapData} />
           </CSSTransition>
 
         <Info details={details}/>
         <main>
-          <Grid details={details} setDetails={setDetails} />
+          <Grid details={details} setDetails={setDetails} charData={charData} />
         </main>    
         <footer>
         <a href="https://www.flaticon.com/free-icons/dragon" 

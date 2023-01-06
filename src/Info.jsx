@@ -19,6 +19,14 @@ class Info extends Component{
             </div>
             <img src={details.url} alt={details.name} 
                 className="infoPortrait" width="250px" height="250px"></img>
+            <details id="infoAppearances">
+            <summary id="appearanceHeader">Appeared in:</summary>
+                <ul className="appearanceTable">
+                {details.appearances.map((appearance) => {
+                    return <li className="appearanceRow" key={appearance.appearance_id}>{appearance.title}</li>
+                })}
+                </ul>
+            </details>
         </aside>);
         }
     }
