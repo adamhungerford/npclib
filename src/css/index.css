@@ -230,4 +230,25 @@ footer a {
   float: left;
 }
 
+.appearanceRow:nth-child(2n) {
+  background-color: #fdfdfd;
+}
+
+.appearanceRow:nth-child(2n-1) {
+  background-color: #e5c4b1;
+}
+
+.appearanceTable {
+  padding-left: 0;
+  margin-top: 5px;
+}
+
+.appearanceRow {
+  color: black;
+  font-weight: normal;
+  padding: 5px;
+  list-style-type: none;
+  margin-left: 0;
+}
+
 /*# sourceMappingURL=index.css.map */
