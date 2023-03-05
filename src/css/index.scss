@@ -3,6 +3,7 @@
 
 .App {
     font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    box-sizing: border-box;
 }
 
 body {
@@ -243,22 +244,29 @@ footer a {
   float:left;
 }
 
-.appearanceRow:nth-child(2n) {
-  background-color: $body;
+#closeInfo {
+  ::after {
+    content: "CLOSE";
 }
-.appearanceRow:nth-child(2n-1) {
-  background-color: lighten(desaturate($color: $header, $amount: 50%), $amount: 40%);
-}
-
-.appearanceTable {
-	padding-left: 0;
-  margin-top: 5px;
 }
 
-.appearanceRow {
-	color: black;
-  font-weight:normal;
-	padding: 5px;
-	list-style-type: none;
-	margin-left: 0;
-}
+
+// .appearanceRow:nth-child(2n) {
+//   background-color: $body;
+// }
+// .appearanceRow:nth-child(2n-1) {
+//   background-color: lighten(desaturate($color: $header, $amount: 50%), $amount: 40%);
+// }
+
+// .appearanceTable {
+// 	padding-left: 0;
+//   margin-top: 5px;
+// }
+
+// .appearanceRow {
+// 	color: black;
+//   font-weight:normal;
+// 	padding: 5px;
+// 	list-style-type: none;
+// 	margin-left: 0;
+// }

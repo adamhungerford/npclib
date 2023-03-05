@@ -11,7 +11,7 @@ class Info extends Component{
         if(details === "" || details === null || details === undefined ){
             return(<></>);
         } else {
-            return(<aside id="info">
+            return(<div id="infoWrapper"><aside id="info">
             <div className="asideText">
                 <h1>{details.name}</h1>
                 <h3>{details.pronouns}</h3>
@@ -27,7 +27,10 @@ class Info extends Component{
                 })}
                 </ul>
             </details>
-        </aside>);
+            
+        </aside><button id="closeInfo" onClick={() => document.querySelector('#infoWrapper').style="display:none;"}>
+                        <h2></h2>
+                    </button></div>);
         }
     }
 
