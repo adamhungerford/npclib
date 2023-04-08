@@ -16,13 +16,13 @@ function App() {
   const [recapData, setRecapData] = useState(false);
 
   useEffect(() => { 
-    fetch("https://gradia.edsite.black/api/characters")
+    fetch("https://gradia.edsite.black/api/gradia/characters")
       .then((res) => res.json())
       .then((json) => {
         setCharData(json);
       })
 
-    fetch("https://gradia.edsite.black/api/story")
+    fetch("https://gradia.edsite.black/api/gradia/story")
       .then((res) => res.json())
       .then((json) => {
         setRecapData(json);
