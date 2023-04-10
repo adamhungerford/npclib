@@ -5,6 +5,7 @@ import Info from './Info';
 import Recap from './Recap.jsx';
 import { CSSTransition } from "react-transition-group";
 import RecapNav from './RecapNav';
+import determineHost from './determineHost';
 
 function App() {
 
@@ -15,23 +16,29 @@ function App() {
   const [charData, setCharData] = useState([]);
   const [recapData, setRecapData] = useState(false);
 
+  const title = determineHost().title;
+  const dbName = determineHost().dbName;
+
   useEffect(() => { 
-    fetch("https://gradia.edsite.black/api/gradia/characters")
+    fetch(`https://gradia.edsite.black/api/${dbName}/characters`)
       .then((res) => res.json())
       .then((json) => {
         setCharData(json);
       })
 
-    fetch("https://gradia.edsite.black/api/gradia/story")
+    fetch(`https://gradia.edsite.black/api/${dbName}/story`)
       .then((res) => res.json())
       .then((json) => {
         setRecapData(json);
       })
+
+      document.title = title;
+    
     }, []);
 
   return (
     <div className="App">
-        <Header />
+        <Header title={title} />
 
           <div className="toggleContainer">
               <aside id="recapToggle" onClick={() => setRecapDisplay(true)}>

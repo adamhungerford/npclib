@@ -22,7 +22,7 @@
 
 @media screen and (min-width:950px) {
     html {
-        background-image: url("../img/orysca-map.png");
+        background-image: $backgroundImg;
         background-position: center;
         background-size: cover;
         background-attachment: fixed;

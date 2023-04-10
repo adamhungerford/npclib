@@ -26,6 +26,10 @@ header {
   background-size:cover;
   color:whitesmoke;
   border:$componentBorder;
+  padding: {
+    left: 10px;
+    right: 10px;
+  }
   
 }
 
