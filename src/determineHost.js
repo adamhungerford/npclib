@@ -1,26 +1,29 @@
-function determineHost (){
-    let host = window.location.host;
+class determineHost {
 
-    const hostInfo = {
-        dbName: "",
-        title: ""
-    };
+host = window.location.host;
 
-    if(host == "bsbs.edsite.black"){
-      hostInfo.dbName = "bsbs";
-      hostInfo.title = "Blue Skies, Black Smoke";
-    } else if (host == "shadowsong.edsite.black"){
-        hostInfo.dbName = "shadowsong";
-        hostInfo.title = "Shadowsong";
-    } else if (host == "gradia.edsite.black"){
-        hostInfo.dbName = "gradia";
-        hostInfo.title = "Tails of Gradia";
-    } else {
-         hostInfo.dbName = "bsbs";
-      hostInfo.title = "Blue Skies, Black Smoke";
+ determineTitle (){
+    if(this.host == "bsbs.edsite.black"){
+      return "Blue Skies, Black Smoke";
+    } else if (this.host == "shadowsong.edsite.black"){
+        return "Shadowsong";
+    } else if (this.host == "gradia.edsite.black"){
+        return "Tails of Gradia";
     }
-  
-    return hostInfo;
+    return "Blue Skies, Black Smoke";
   }
+
+   determineFetch (){
+    if(this.host == "bsbs.edsite.black"){
+      return "bsbs";
+    } else if (this.host == "shadowsong.edsite.black"){
+        return "shadowsong";
+    } else if (this.host == "gradia.edsite.black"){
+        return "gradia";
+    }
+    return "bsbs";
+  }
+
+}
 
   export default determineHost;

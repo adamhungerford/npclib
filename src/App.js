@@ -16,29 +16,26 @@ function App() {
   const [charData, setCharData] = useState([]);
   const [recapData, setRecapData] = useState(false);
 
-  const title = determineHost().title;
-  const dbName = determineHost().dbName;
+  const host = new determineHost();
 
   useEffect(() => { 
-    fetch(`https://gradia.edsite.black/api/${dbName}/characters`)
+    fetch(`https://gradia.edsite.black/api/${host.determineFetch()}/characters`)
       .then((res) => res.json())
       .then((json) => {
         setCharData(json);
       })
 
-    fetch(`https://gradia.edsite.black/api/${dbName}/story`)
+    fetch(`https://gradia.edsite.black/api/${host.determineFetch()}/story`)
       .then((res) => res.json())
       .then((json) => {
         setRecapData(json);
       })
-
-      document.title = title;
     
     }, []);
 
   return (
     <div className="App">
-        <Header title={title} />
+        <Header title={host.determineTitle()} />
 
           <div className="toggleContainer">
               <aside id="recapToggle" onClick={() => setRecapDisplay(true)}>
