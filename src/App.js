@@ -31,10 +31,13 @@ function App() {
         setRecapData(json);
       })
     
+      document.title = host.determineTitle();
+
     }, []);
 
   return (
-    <div className="App">
+    <div className={"App " + host.determineFetch()}>
+      <div className="container">
         <Header title={host.determineTitle()} />
 
           <div className="toggleContainer">
@@ -73,6 +76,7 @@ function App() {
         href="http://edsite.black">Return to EDSITE</a>
         {/* <br />"Superstition Mountain, Apache Trail, Arizona (no.1), 1929" by George Elbert Burr */}
         </footer>
+    </div>
     </div>
   );
 }

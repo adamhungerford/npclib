@@ -1,11 +1,69 @@
-.App {
-  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+/*******************
+ * 1. UNIVERSALS
+ *******************/
+/*******************
+ * 2. GRADIA
+ *******************/
+.gradia header, .gradia #recapToggle, .gradia button, .gradia #recapNav {
+  background: url(../img/3859499_citrus.jpg), #ca4a00;
+}
+.gradia .portrait {
+  border: 3px ridge #ff6e6e;
+}
+
+/*******************
+ * 2. BSBS
+ *******************/
+.bsbs header, .bsbs #recapToggle, .bsbs button, .bsbs #recapNav {
+  background: url(../img/3859499_darkblue.jpg), #181775;
+  background-size: cover;
+}
+.bsbs .portrait {
+  border: 3px ridge #33328b;
+}
+
+@media (min-width: 950px) {
+  .App.bsbs {
+    background-image: url("../img/1974.387_Hampstead_Stormy_Sky.jpg");
+    background-position: center;
+    background-size: cover;
+    background-attachment: fixed;
+  }
+
+  .App.gradia {
+    background-image: url("../img/orysca-map.png");
+    background-position: center;
+    background-size: cover;
+    background-attachment: fixed;
+  }
+
+  .bsbs #info {
+    background: url(../img/3859499_darkblue.jpg), #181775;
+    background-size: cover;
+  }
+
+  .gradia #info {
+    background: url(../img/3859499_citrus.jpg), #ca4a00;
+    background-size: cover;
+  }
+}
+* {
   box-sizing: border-box;
 }
 
 body {
   margin: 0;
+}
+
+.App {
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+  box-sizing: border-box;
+}
+
+.App .container {
+  margin: 0;
   background-color: #fdfdfd;
+  z-index: 0;
 }
 
 h1, h2, h3 {
@@ -19,7 +77,6 @@ h4 {
 
 header {
   text-align: center;
-  background: url(../img/3859499_citrus.jpg), #ca4a00;
   background-size: cover;
   color: whitesmoke;
   border: 5px double white;
@@ -44,7 +101,6 @@ header {
 }
 
 .portrait {
-  border: 3px ridge #ff6e6e;
   box-shadow: 0px 5px 10px;
   overflow: hidden;
   position: relative;
@@ -98,7 +154,6 @@ main {
   top: 0px;
   right: 0px;
   width: 40%;
-  background: url(../img/3859499_citrus.jpg), #ca4a00;
   background-size: cover;
   color: white;
   padding: 0 10px 0 10px;
@@ -166,7 +221,6 @@ button {
   border: 0;
   height: auto;
   width: 50%;
-  background: url(../img/3859499_citrus.jpg), #ca4a00;
   background-size: cover;
   color: white;
   display: block;
