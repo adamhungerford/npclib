@@ -25,6 +25,7 @@ $gradia-backgroundImg: url("../img/orysca-map.png");
 .gradia {
     header, #recapToggle, button, #recapNav{
         background: $gradia-headerImg, $gradia-header;
+        background-size: cover;
     }
     .portrait {
         border: 3px ridge $gradia-gridPortrait;
