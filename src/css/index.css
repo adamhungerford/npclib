@@ -6,6 +6,7 @@
  *******************/
 .gradia header, .gradia #recapToggle, .gradia button, .gradia #recapNav {
   background: url(../img/3859499_citrus.jpg), #ca4a00;
+  background-size: cover;
 }
 .gradia .portrait {
   border: 3px ridge #ff6e6e;
