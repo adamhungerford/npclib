@@ -65,8 +65,8 @@ function App() {
         </main>    
         <footer>
         <a href="https://www.flaticon.com/free-icons/dragon" 
-        title="dragon icons">Dragon favicon created by Freepik - Flaticon</a> | <a 
-        href="http://edsite.black">Return to EDSITE</a>
+        title="dragon icons">Dragon favicon created by Freepik - Flaticon</a> <!--| <a 
+        href="http://edsite.black">Return to EDSITE</a>-->
         {/* <br />"Superstition Mountain, Apache Trail, Arizona (no.1), 1929" by George Elbert Burr */}
         </footer>
     </div>
